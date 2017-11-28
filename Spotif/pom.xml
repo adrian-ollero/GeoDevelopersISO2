@@ -41,5 +41,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>Iteration1</module>
+		<module>Iteration2</module>
 	</modules>
 </project>

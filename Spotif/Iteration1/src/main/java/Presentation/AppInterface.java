@@ -4,6 +4,8 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
+import javax.swing.JTextPane;
+import javax.swing.JLabel;
 
 public class AppInterface {
 
@@ -37,12 +39,21 @@ public class AppInterface {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 320, 281);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JButton btnAddSong = new JButton("Add song");
-		btnAddSong.setBounds(314, 43, 89, 23);
+		btnAddSong.setBounds(204, 34, 89, 23);
 		frame.getContentPane().add(btnAddSong);
+		
+		JTextPane txtpnBlancoYNegro = new JTextPane();
+		txtpnBlancoYNegro.setText("Blanco y negro\r\nThe Spectre\r\nGirasoles\r\nFaded\r\nTu Foto\r\nEsencial");
+		txtpnBlancoYNegro.setBounds(24, 34, 150, 197);
+		frame.getContentPane().add(txtpnBlancoYNegro);
+		
+		JLabel lblSongs = new JLabel("Songs");
+		lblSongs.setBounds(24, 9, 46, 14);
+		frame.getContentPane().add(lblSongs);
 	}
 }
