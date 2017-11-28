@@ -3,11 +3,11 @@ package Presentation;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JButton;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
+import javax.swing.JButton;
 
-public class AppInterface {
+public class AppInterface_it3 extends AppInterface {
 
 	private JFrame frame;
 
@@ -18,7 +18,7 @@ public class AppInterface {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AppInterface window = new AppInterface();
+					AppInterface_it3 window = new AppInterface_it3();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,7 +30,7 @@ public class AppInterface {
 	/**
 	 * Create the application.
 	 */
-	public AppInterface() {
+	public AppInterface_it3() {
 		initialize();
 	}
 
@@ -39,25 +39,30 @@ public class AppInterface {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 320, 281);
+		frame.setBounds(100, 100, 368, 303);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnAddSong = new JButton("Add song");
-		btnAddSong.setBounds(204, 34, 89, 23);
-		frame.getContentPane().add(btnAddSong);
-		
 		JTextPane txtpnBlancoYNegro = new JTextPane();
-		txtpnBlancoYNegro.setText("Blanco y negro\r\nThe Spectre\r\nGirasoles\r\nFaded\r\nTu Foto\r\nEsencial");
-		txtpnBlancoYNegro.setBounds(24, 34, 150, 197);
+		txtpnBlancoYNegro.setText("Blanco y negro\r\nThe spectre\r\nTu foto\r\nFaded");
+		txtpnBlancoYNegro.setBounds(35, 42, 177, 187);
 		frame.getContentPane().add(txtpnBlancoYNegro);
 		
 		JLabel lblSongs = new JLabel("Songs");
-		lblSongs.setBounds(24, 9, 46, 14);
+		lblSongs.setBounds(35, 17, 46, 14);
 		frame.getContentPane().add(lblSongs);
 		
+		JButton btnAddSong = new JButton("Add song");
+		btnAddSong.setBounds(240, 42, 102, 23);
+		frame.getContentPane().add(btnAddSong);
+		
 		JButton btnAddAlbum = new JButton("Add album");
-		btnAddAlbum.setBounds(204, 68, 89, 23);
+		btnAddAlbum.setBounds(240, 76, 102, 23);
 		frame.getContentPane().add(btnAddAlbum);
+		
+		JButton btnChangePrice = new JButton("Change price");
+		btnChangePrice.setBounds(240, 110, 102, 23);
+		frame.getContentPane().add(btnChangePrice);
 	}
+
 }

@@ -1,21 +1,19 @@
 package Domain;
 
-public class Song extends Album{
+public class Song{
 	
-	private String idSong;
-	private String titleSong;
-	private String singerSong;
-	private double priceSong;
-	private String dateSong;
+	protected String idSong;
+	protected String title;
+	protected String singer;
+	protected double price;
+	protected String date;
 	
-	public Song(String idAlbum, String title, String singer, double price, String date,
-		String idSong, String titleSong, String singerSong, double priceSong, String dateSong) {
-		super(idAlbum, title, singer, price, date);
+	public Song(String idSong, String title, String singer, double price, String date) {
 		this.idSong = idSong;
-		this.titleSong = titleSong;
-		this.singerSong = singerSong;
-		this.priceSong = priceSong;
-		this.dateSong = dateSong;
+		this.title = title;
+		this.singer = singer;
+		this.price = price;
+		this.date = date;
 	}
 
 	public String getIdSong(){
@@ -23,19 +21,19 @@ public class Song extends Album{
 	}
 
 	public String getTitle(){
-		return titleSong;
+		return title;
 	}
 
-	public String getSingerSong(){
-		return singerSong;
+	public String getSinger(){
+		return singer;
 	}
 
-	public double getPriceSong(){
-		return priceSong;
+	public double getPrice(){
+		return price;
 	}
 
-	public String getDateSong(){
-		return dateSong;
+	public String getDate(){
+		return date;
 	}
 }
 

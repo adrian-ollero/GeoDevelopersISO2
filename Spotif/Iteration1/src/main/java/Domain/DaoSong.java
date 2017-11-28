@@ -11,10 +11,8 @@ public class DaoSong{
 	  DBBroker conex= new DBBroker();
 	  try {
 	   Statement estatuto = conex.getConnection();
-	   estatuto.executeUpdate("INSERT INTO song VALUES ('"+song.getIdAlbum()+"', '"+song.getTitle()+"', '"+song.getSinger()+"', '"
-	     +song.getPrice()+"', '"+song.getDate()+"', '"+song.getIdSong()+"', '"
-	     +song.getTitle() +"', '"+song.getSingerSong()+"', '"
-	     +song.getPriceSong()+"', '"+song.getDateSong()+"')");
+	   estatuto.executeUpdate("INSERT INTO song VALUES ('"+song.getIdSong()+"', '"+song.getTitle()+"', '"
+	     +song.getSinger()+"', '"+song.getPrice()+"', '"+song.getDate()+"')");
 	   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
 	   estatuto.close();
 	   conex.desconectar();
