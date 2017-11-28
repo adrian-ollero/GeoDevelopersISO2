@@ -41,12 +41,5 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>Iteration1</module>
-    <module>Iteration2</module>
-    <module>Iteration3</module>
-    <module>Iteration4</module>
-    <module>Iteration5</module>
-    <module>Iteration6</module>
-    <module>Iteration7</module>
-    <module>Iteration8</module>
-  </modules>
+	</modules>
 </project>

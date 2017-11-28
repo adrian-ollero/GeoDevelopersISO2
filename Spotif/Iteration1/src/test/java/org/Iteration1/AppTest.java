@@ -1,4 +1,4 @@
-package org.Iteration6;
+package org.Iteration1;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

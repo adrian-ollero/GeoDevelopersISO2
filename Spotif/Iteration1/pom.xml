@@ -7,9 +7,9 @@
     <artifactId>Spotif</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>GeoDevelopers1</groupId>
+  <groupId>GeoDevelopers</groupId>
   <artifactId>Iteration1</artifactId>
-  <version>0.0.2-Login</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>Iteration1</name>
   <url>http://maven.apache.org</url>
   <properties>
