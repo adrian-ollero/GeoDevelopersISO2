@@ -3,20 +3,20 @@ package Persistence;
 import java.sql.*;
 import java.util.*;
 
-public class DBBroker {
-    protected static DBBroker mInstancia=null;
+public class DBBroker_it2 {
+    protected static DBBroker_it2 mInstancia=null;
     protected static Connection mBD;
     private static String url=""; 
     private static String driver="com.mysql.jdbc.Driver";
     
-    private DBBroker()throws Exception {
+    private DBBroker_it2()throws Exception {
     	conectar();
     		
     }
     
-    public static DBBroker getAgente() throws Exception{
+    public static DBBroker_it2 getAgente() throws Exception{
           if (mInstancia==null){
-          mInstancia=new DBBroker();
+          mInstancia=new DBBroker_it2();
         }
         return mInstancia;
      }
