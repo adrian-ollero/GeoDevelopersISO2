@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import Persistence.DBBroker;
 
 public class DaoUser_it6 {
-	public void deleteAlbum(User user) {
+	public void deleteUser(User user) {
 		DBBroker conex= new DBBroker();
 		  try {
 		   Statement estatuto = conex.getConnection();
@@ -19,7 +19,7 @@ public class DaoUser_it6 {
 		    
 		  } catch (SQLException e) {
 		            System.out.println(e.getMessage());
-		   JOptionPane.showMessageDialog(null, "No se Registro el album");
+		   JOptionPane.showMessageDialog(null, "No se eliminó el usuario");
 		  }
 	}
 }
