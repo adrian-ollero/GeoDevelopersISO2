@@ -1,5 +1,5 @@
 package Persistence;
 
-public class DBBroker_it7 {
+public class DBBroker_it7 extends DBBroker{
 
 }
