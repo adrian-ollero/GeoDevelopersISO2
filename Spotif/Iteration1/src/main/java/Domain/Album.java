@@ -38,7 +38,8 @@ public class Album{
 		return date;
 	}
 	
-	public Song [] listSongs() {
+	//Modified in the testing part
+	public Song [] getListSongs() {
 		return listSongs;
 	}
 }

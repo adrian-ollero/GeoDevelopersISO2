@@ -12,14 +12,48 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.directory.Iteration1>../Iteration1/target</project.build.directory.Iteration1>
+		<project.build.directory.Iteration2>../Iteration2/target</project.build.directory.Iteration2>
+		<project.build.directory.Iteration3>../Iteration3/target</project.build.directory.Iteration3>
+		<project.build.directory.Iteration4>../Iteration4/target</project.build.directory.Iteration4>
+		<project.build.directory.Iteration5>../Iteration5/target</project.build.directory.Iteration5>
+		<project.build.directory.Iteration6>../Iteration6/target</project.build.directory.Iteration6>
+		<project.build.directory.Iteration7>../Iteration7/target</project.build.directory.Iteration7>
+		<project.build.directory.Iteration8>../Iteration8/target</project.build.directory.Iteration8>
+
+		<project.classes.directory.Iteration1>../Iteration1/target/classes</project.classes.directory.Iteration1>
+		<project.classes.directory.Iteration2>../Iteration2/target/classes</project.classes.directory.Iteration2>
+		<project.classes.directory.Iteration3>../Iteration3/target/classes</project.classes.directory.Iteration3>
+		<project.classes.directory.Iteration4>../Iteration4/target/classes</project.classes.directory.Iteration4>
+		<project.classes.directory.Iteration5>../Iteration5/target/classes</project.classes.directory.Iteration5>
+		<project.classes.directory.Iteration6>../Iteration6/target/classes</project.classes.directory.Iteration6>
+		<project.classes.directory.Iteration7>../Iteration7/target/classes</project.classes.directory.Iteration7>
+		<project.classes.directory.Iteration8>../Iteration8/target/classes</project.classes.directory.Iteration8>
+
+		<project.sources.directory.Iteration1>../Iteration1/src/main/java</project.sources.directory.Iteration1>
+		<project.sources.directory.Iteration2>../Iteration2/src/main/java</project.sources.directory.Iteration2>
+		<project.sources.directory.Iteration3>../Iteration3/src/main/java</project.sources.directory.Iteration3>
+		<project.sources.directory.Iteration4>../Iteration4/src/main/java</project.sources.directory.Iteration4>
+		<project.sources.directory.Iteration5>../Iteration5/src/main/java</project.sources.directory.Iteration5>
+		<project.sources.directory.Iteration6>../Iteration6/src/main/java</project.sources.directory.Iteration6>
+		<project.sources.directory.Iteration7>../Iteration7/src/main/java</project.sources.directory.Iteration7>
+		<project.sources.directory.Iteration8>../Iteration8/src/main/java</project.sources.directory.Iteration8>
+
+		<project.generated-sources.directory.Iteration1>../Iteration1/target/generated-sources/annotations</project.generated-sources.directory.Iteration1>
+		<project.generated-sources.directory.Iteration2>../Iteration2/target/generated-sources/annotations</project.generated-sources.directory.Iteration2>
+		<project.generated-sources.directory.Iteration3>../Iteration3/target/generated-sources/annotations</project.generated-sources.directory.Iteration3>
+		<project.generated-sources.directory.Iteration4>../Iteration4/target/generated-sources/annotations</project.generated-sources.directory.Iteration4>
+		<project.generated-sources.directory.Iteration5>../Iteration5/target/generated-sources/annotations</project.generated-sources.directory.Iteration5>
+		<project.generated-sources.directory.Iteration6>../Iteration6/target/generated-sources/annotations</project.generated-sources.directory.Iteration6>
+		<project.generated-sources.directory.Iteration7>../Iteration7/target/generated-sources/annotations</project.generated-sources.directory.Iteration7>
+		<project.generated-sources.directory.Iteration8>../Iteration8/target/generated-sources/annotations</project.generated-sources.directory.Iteration8>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+			<version>4.12</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -47,53 +81,157 @@
 					<version>0.7.9</version>
 					<executions>
 						<execution>
-							<id>default-prepare-agent</id>
 							<goals>
 								<goal>prepare-agent</goal>
 							</goals>
 						</execution>
 						<execution>
-							<id>default-prepare-agent-integration</id>
-							<goals>
-								<goal>prepare-agent-integration</goal>
-							</goals>
-						</execution>
-						<execution>
-							<id>default-report</id>
+							<id>report</id>
+							<phase>prepare-package</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
 						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.17</version>
+					<configuration>
+						<forkCount>1</forkCount>
+						<reuseForks>true</reuseForks>
+					</configuration>
+					<executions>
 						<execution>
-							<id>default-report-integration</id>
+							<id>default-test</id>
+							<phase>test</phase>
 							<goals>
-								<goal>report-integration</goal>
+								<goal>test</goal>
 							</goals>
 						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-antrun-plugin</artifactId>
+					<version>1.6</version>
+					<executions>
 						<execution>
-							<id>default-check</id>
+							<phase>post-integration-test</phase>
 							<goals>
-								<goal>check</goal>
+								<goal>run</goal>
 							</goals>
 							<configuration>
-								<rules>
-									<!-- implementation is needed only for Maven 2 -->
-									<rule implementation="org.jacoco.maven.RuleConfiguration">
-										<element>BUNDLE</element>
-										<limits>
-											<!-- implementation is needed only for Maven 2 -->
-											<limit implementation="org.jacoco.report.check.Limit">
-												<counter>COMPLEXITY</counter>
-												<value>COVEREDRATIO</value>
-												<minimum>0.60</minimum>
-											</limit>
-										</limits>
-									</rule>
-								</rules>
+								<target>
+									<!-- Execute an ant task within maven -->
+									<echo message="Generating JaCoCo Reports" />
+									<taskdef name="report" classname="org.jacoco.ant.ReportTask">
+										<classpath path="${basedir}/target/jacoco-jars/org.jacoco.ant.jar" />
+									</taskdef>
+									<mkdir dir="${basedir}/target/coverage-report" />
+									<report>
+										<executiondata>
+											<fileset dir="${build.directory.Iteration1}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration2}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration3}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration4}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration5}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration6}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration7}">
+												<include name="jacoco.exec" />
+											</fileset>
+											<fileset dir="${build.directory.Iteration8}">
+												<include name="jacoco.exec" />
+											</fileset>
+										</executiondata>
+										<structure name="jacoco-multi Coverage Project">
+											<group name="jacoco-multi">
+												<classfiles>
+													<fileset dir="${classes.directory.Iteration1}" />
+													<fileset dir="${classes.directory.Iteration2}" />
+													<fileset dir="${classes.directory.Iteration3}" />
+													<fileset dir="${classes.directory.Iteration4}" />
+													<fileset dir="${classes.directory.Iteration5}" />
+													<fileset dir="${classes.directory.Iteration6}" />
+													<fileset dir="${classes.directory.Iteration7}" />
+													<fileset dir="${classes.directory.Iteration8}" />
+												</classfiles>
+												<sourcefiles encoding="UTF-8">
+													<fileset dir="${sources.directory.Iteration1}" />
+													<fileset dir="${sources.directory.Iteration2}" />
+													<fileset dir="${sources.directory.Iteration3}" />
+													<fileset dir="${sources.directory.Iteration4}" />
+													<fileset dir="${sources.directory.Iteration5}" />
+													<fileset dir="${sources.directory.Iteration6}" />
+													<fileset dir="${sources.directory.Iteration7}" />
+													<fileset dir="${sources.directory.Iteration8}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration1}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration2}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration3}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration4}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration5}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration6}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration7}"></fileset>
+													<fileset dir="${generated-sources.directory.Iteration8}"></fileset>
+												</sourcefiles>
+											</group>
+										</structure>
+										<html destdir="${basedir}/target/coverage-report/html" />
+										<xml destfile="${basedir}/target/coverage-report/coverage-report.xml" />
+										<csv destfile="${basedir}/target/coverage-report/coverage-report.csv" />
+									</report>
+								</target>
+							</configuration>
+						</execution>
+					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>org.jacoco</groupId>
+							<artifactId>org.jacoco.ant</artifactId>
+							<version>${jacoco.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<executions>
+						<!-- Copy the ant tasks jar. Needed for ts.jacoco.report-ant . -->
+						<execution>
+							<id>jacoco-dependency-ant</id>
+							<goals>
+								<goal>copy</goal>
+							</goals>
+							<phase>process-test-resources</phase>
+							<inherited>false</inherited>
+							<configuration>
+								<artifactItems>
+									<artifactItem>
+										<groupId>org.jacoco</groupId>
+										<artifactId>org.jacoco.ant</artifactId>
+										<version>${jacoco.version}</version>
+									</artifactItem>
+								</artifactItems>
+								<stripVersion>true</stripVersion>
+								<outputDirectory>${basedir}/target/jacoco-jars</outputDirectory>
 							</configuration>
 						</execution>
 					</executions>
 				</plugin>
+				
 			</plugins>
 		</pluginManagement>
 
@@ -138,38 +276,24 @@
 				</reportSets>
 			</plugin>
 
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
 				<version>3.8</version>
 				<configuration>
 					<skipEmptyReport>false</skipEmptyReport>
 					<ruleset>/rulesets/java/braces.xml</ruleset>
-            		<ruleset>/rulesets/java/naming.xml</ruleset>
-				</configuration>
-			</plugin>
-			<!-- <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<configuration>
-					<skipEmptyReport>false</skipEmptyReport>
-				</configuration>
+					<ruleset>/rulesets/java/naming.xml</ruleset>
+				</configuration> 
 			</plugin> -->
-			<!-- <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<configuration>
-					<skipEmptyReport>false</skipEmptyReport>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>findbugs-maven-plugin</artifactId> 
+				<configuration> <skipEmptyReport>false</skipEmptyReport> </configuration> 
+				</plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-checkstyle-plugin</artifactId> 
+				<configuration> <skipEmptyReport>false</skipEmptyReport> </configuration> 
+				</plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jxr-plugin</artifactId> 
+				</plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-javadoc-plugin</artifactId> 
+				</plugin> -->
 
 
 		</plugins>

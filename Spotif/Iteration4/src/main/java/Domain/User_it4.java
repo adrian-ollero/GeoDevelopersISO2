@@ -6,7 +6,7 @@ public class User_it4 extends User{
 
 	protected ArrayList<Song_it3> songs;
 	
-	public User_it4(String user, String password, ArrayList<Song_it3> songs) {
+	public User_it4(String user, String password, ArrayList<Song_it3> songs){
 		super(user, password);
 		this.songs=songs;
 	}

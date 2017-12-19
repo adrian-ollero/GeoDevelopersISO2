@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import Persistence.DBBroker;
 
 public class DaoAlbum{
-	 
+	
 	 public void addAlbum(Album album){
 
 	  DBBroker conex= new DBBroker();
