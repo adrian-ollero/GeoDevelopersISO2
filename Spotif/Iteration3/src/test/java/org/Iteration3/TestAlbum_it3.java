@@ -25,6 +25,7 @@ public class TestAlbum_it3
     @Test
     public void testExistentTitle(){
     	//datos de prueba
+    	album.setTitle("Despacito Remix");
     	
     	assertTrue(!album.getTitle().contentEquals(""));
     }
@@ -55,6 +56,7 @@ public class TestAlbum_it3
     @Test
     public void testExistentSinger(){
     	//datos de prueba
+    	album.setSinger("Luis Fonsi & Daddy Yankee ft Justin Bieber");
     	
     	assertTrue(!album.getSinger().contentEquals(""));
     }
@@ -85,6 +87,7 @@ public class TestAlbum_it3
     @Test
     public void testPositivePrice(){
     	//datos de prueba
+    	album.setPrice(0.01);
     	
     	assertTrue(album.getPrice()>0);
     }
@@ -108,6 +111,7 @@ public class TestAlbum_it3
     @Test
     public void testExistentDate(){
     	//datos de prueba
+    	album.setDate("17-11-2017");
     	
     	assertTrue(!album.getDate().contentEquals(""));
     }
@@ -115,9 +119,9 @@ public class TestAlbum_it3
     @Test
     public void testNonExistentdate(){
     	//datos de prueba
-    	album.setTitle("");
+    	album.setDate("");
     	
-    	assertTrue(album.getTitle().contentEquals(""));
+    	assertTrue(album.getDate().contentEquals(""));
     }
     
 }

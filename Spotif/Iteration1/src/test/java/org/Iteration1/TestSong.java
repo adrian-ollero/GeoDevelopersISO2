@@ -25,15 +25,15 @@ public class TestSong
     
     @Before
     public void setUp(){
-    	song = new Song("306578981qwe","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
+    	song = new Song("306578981qwe","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
     	song2 = new Song("5704hbc","null","String with more than 255 characters",-8.00,"null");
     	song3 = new Song("28469863526opt","String with more than 255 characters","null",-0.01,"12-01-2017");
-    	song4 = new Song("99999999zzz","Despacito","Luis Fonsi ft. Dady Yankee",0.00,"12-01-2017");
-    	song5 = new Song("100000000aaa","Despacito","Luis Fonsi ft. Dady Yankee",0.01,"12-01-2017");
-    	song6 = new Song("100000000aab","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"null");
-    	song7 = new Song("999999999zzy","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
-    	song8 = new Song("999999999zzz","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
-    	song9 = new Song("1000000000aaa","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
+    	song4 = new Song("99999999zzz","Despacito","Luis Fonsi ft. Daddy Yankee",0.00,"12-01-2017");
+    	song5 = new Song("100000000aaa","Despacito","Luis Fonsi ft. Daddy Yankee",0.01,"12-01-2017");
+    	song6 = new Song("100000000aab","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"null");
+    	song7 = new Song("999999999zzy","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
+    	song8 = new Song("999999999zzz","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
+    	song9 = new Song("1000000000aaa","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
     }
     
     @Test

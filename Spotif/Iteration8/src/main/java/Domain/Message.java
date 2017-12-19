@@ -14,11 +14,17 @@ public class Message {
 		this.description=description;
 	}
 	
+	//Method we have done during testing
+	public long getIdMessage() {
+		return idMessage;
+	}
+	
 	public String getSender() {
 		return sender;
 	}
 	
-	public void setSender() {
+	//Modified during testing
+	public void setSender(String sender) {
 		this.sender=sender;
 	}
 	

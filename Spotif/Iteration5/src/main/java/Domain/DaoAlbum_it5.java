@@ -8,7 +8,8 @@ import javax.swing.JOptionPane;
 import Persistence.DBBroker;
 
 public class DaoAlbum_it5 {
-	public void deleteAlbum(Album album) {
+	//modify in the testing phase
+	public void deleteAlbum(Album_it3 album) {
 		DBBroker conex= new DBBroker();
 		  try {
 		   Statement estatuto = conex.getConnection();

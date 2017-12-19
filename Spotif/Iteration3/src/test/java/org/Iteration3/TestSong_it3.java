@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import Domain.Song;
 import Domain.Song_it3;
 
 /**
@@ -17,12 +18,13 @@ public class TestSong_it3
     
     @Before
     public void setUp(){
-    	song = new Song_it3("306578981qwe","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
+    	song = new Song_it3("306578981qwe","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
     }
     
     @Test
     public void testExistentTitle(){
     	//datos de prueba
+    	song.setTitle("Échale la culpa");
     	
     	assertTrue(!song.getTitle().contentEquals(""));
     }
@@ -53,6 +55,7 @@ public class TestSong_it3
     @Test
     public void testExistentSinger(){
     	//datos de prueba
+    	song.setSinger("Luis Fonsi");
     	
     	assertTrue(!song.getSinger().contentEquals(""));
     }
@@ -83,6 +86,7 @@ public class TestSong_it3
     @Test
     public void testPositivePrice(){
     	//datos de prueba
+    	song.setPrice(0.01);
     	
     	assertTrue(song.getPrice()>0);
     }
@@ -106,6 +110,7 @@ public class TestSong_it3
     @Test
     public void testExistentDate(){
     	//datos de prueba
+    	song.setDate("17-11-2017");
     	
     	assertTrue(!song.getDate().contentEquals(""));
     }
@@ -113,9 +118,9 @@ public class TestSong_it3
     @Test
     public void testNonExistentdate(){
     	//datos de prueba
-    	song.setTitle("");
+    	song.setDate("");
     	
-    	assertTrue(song.getTitle().contentEquals(""));
+    	assertTrue(song.getDate().contentEquals(""));
     }
     
 }
