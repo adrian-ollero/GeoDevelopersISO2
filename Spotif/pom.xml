@@ -20,6 +20,7 @@
 		<project.build.directory.Iteration6>../Iteration6/target</project.build.directory.Iteration6>
 		<project.build.directory.Iteration7>../Iteration7/target</project.build.directory.Iteration7>
 		<project.build.directory.Iteration8>../Iteration8/target</project.build.directory.Iteration8>
+		<project.build.directory.build-tools>../build-tools/target</project.build.directory.build-tools>
 
 		<project.classes.directory.Iteration1>../Iteration1/target/classes</project.classes.directory.Iteration1>
 		<project.classes.directory.Iteration2>../Iteration2/target/classes</project.classes.directory.Iteration2>
@@ -29,6 +30,7 @@
 		<project.classes.directory.Iteration6>../Iteration6/target/classes</project.classes.directory.Iteration6>
 		<project.classes.directory.Iteration7>../Iteration7/target/classes</project.classes.directory.Iteration7>
 		<project.classes.directory.Iteration8>../Iteration8/target/classes</project.classes.directory.Iteration8>
+		<project.classes.directory.build-tools>../build-tools/target/classes</project.classes.directory.build-tools>
 
 		<project.sources.directory.Iteration1>../Iteration1/src/main/java</project.sources.directory.Iteration1>
 		<project.sources.directory.Iteration2>../Iteration2/src/main/java</project.sources.directory.Iteration2>
@@ -38,6 +40,7 @@
 		<project.sources.directory.Iteration6>../Iteration6/src/main/java</project.sources.directory.Iteration6>
 		<project.sources.directory.Iteration7>../Iteration7/src/main/java</project.sources.directory.Iteration7>
 		<project.sources.directory.Iteration8>../Iteration8/src/main/java</project.sources.directory.Iteration8>
+		<project.sources.directory.build-tools>../build-tools/src/main/java</project.sources.directory.build-tools>
 
 		<project.generated-sources.directory.Iteration1>../Iteration1/target/generated-sources/annotations</project.generated-sources.directory.Iteration1>
 		<project.generated-sources.directory.Iteration2>../Iteration2/target/generated-sources/annotations</project.generated-sources.directory.Iteration2>
@@ -47,6 +50,8 @@
 		<project.generated-sources.directory.Iteration6>../Iteration6/target/generated-sources/annotations</project.generated-sources.directory.Iteration6>
 		<project.generated-sources.directory.Iteration7>../Iteration7/target/generated-sources/annotations</project.generated-sources.directory.Iteration7>
 		<project.generated-sources.directory.Iteration8>../Iteration8/target/generated-sources/annotations</project.generated-sources.directory.Iteration8>
+		<project.generated-sources.directory.Iteration8>../Iteration8/target/generated-sources/annotations</project.generated-sources.directory.Iteration8>
+		<project.generated-sources.directory.build-tools>../build-tools/target/generated-sources/annotations</project.generated-sources.directory.build-tools>
 	</properties>
 
 	<dependencies>
@@ -63,7 +68,33 @@
 	</dependencies>
 
 	<build>
-
+	<plugins>
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.8</version>
+        <configuration>
+          <rulesets>
+             <ruleset>pmd-ruleset.xml</ruleset>
+          </rulesets>
+          <printFailingErrors>true</printFailingErrors>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>GeoDevelopers</groupId>
+            <artifactId>build-tools</artifactId>
+            <version>1.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      </plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -156,6 +187,9 @@
 											<fileset dir="${build.directory.Iteration8}">
 												<include name="jacoco.exec" />
 											</fileset>
+											<fileset dir="${build.directory.build-tools}">
+												<include name="jacoco.exec" />
+											</fileset>
 										</executiondata>
 										<structure name="jacoco-multi Coverage Project">
 											<group name="jacoco-multi">
@@ -168,6 +202,7 @@
 													<fileset dir="${classes.directory.Iteration6}" />
 													<fileset dir="${classes.directory.Iteration7}" />
 													<fileset dir="${classes.directory.Iteration8}" />
+													<fileset dir="${classes.directory.build-tools}" />
 												</classfiles>
 												<sourcefiles encoding="UTF-8">
 													<fileset dir="${sources.directory.Iteration1}" />
@@ -178,6 +213,7 @@
 													<fileset dir="${sources.directory.Iteration6}" />
 													<fileset dir="${sources.directory.Iteration7}" />
 													<fileset dir="${sources.directory.Iteration8}"></fileset>
+													<fileset dir="${sources.directory.build-tools}"></fileset>
 													<fileset dir="${generated-sources.directory.Iteration1}"></fileset>
 													<fileset dir="${generated-sources.directory.Iteration2}"></fileset>
 													<fileset dir="${generated-sources.directory.Iteration3}"></fileset>
@@ -186,6 +222,7 @@
 													<fileset dir="${generated-sources.directory.Iteration6}"></fileset>
 													<fileset dir="${generated-sources.directory.Iteration7}"></fileset>
 													<fileset dir="${generated-sources.directory.Iteration8}"></fileset>
+													<fileset dir="${generated-sources.directory.build-tools}"></fileset>
 												</sourcefiles>
 											</group>
 										</structure>
@@ -238,6 +275,7 @@
 	</build>
 	<packaging>pom</packaging>
 	<modules>
+		<module>build-tools</module>
 		<module>Iteration1</module>
 		<module>Iteration2</module>
 		<module>Iteration3</module>
@@ -247,9 +285,6 @@
 		<module>Iteration7</module>
 		<module>Iteration8</module>
 	</modules>
-
-
-
 
 	<reporting>
 		<plugins>
@@ -276,24 +311,24 @@
 				</reportSets>
 			</plugin>
 
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.8</version>
-				<configuration>
-					<skipEmptyReport>false</skipEmptyReport>
-					<ruleset>/rulesets/java/braces.xml</ruleset>
-					<ruleset>/rulesets/java/naming.xml</ruleset>
-				</configuration> 
-			</plugin> -->
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>findbugs-maven-plugin</artifactId> 
+			<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.8</version>
+        <configuration>
+          <rulesets>
+             <ruleset>pmd-ruleset.xml</ruleset>
+          </rulesets>
+        </configuration>
+      </plugin>
+			 <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>findbugs-maven-plugin</artifactId> 
 				<configuration> <skipEmptyReport>false</skipEmptyReport> </configuration> 
-				</plugin> -->
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-checkstyle-plugin</artifactId> 
+				</plugin>
+			 <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-checkstyle-plugin</artifactId> 
 				<configuration> <skipEmptyReport>false</skipEmptyReport> </configuration> 
 				</plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jxr-plugin</artifactId> 
 				</plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-javadoc-plugin</artifactId> 
-				</plugin> -->
+				</plugin> 
 
 
 		</plugins>
