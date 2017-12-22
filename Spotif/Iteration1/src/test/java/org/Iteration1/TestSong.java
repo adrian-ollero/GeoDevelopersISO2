@@ -36,7 +36,7 @@ public class TestSong
     	song9 = new Song("1000000000aaa","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
     }
     
-    @Test
+    /*@Test
     public void testObtainIdSong(){
     	assertTrue(!song.getIdSong().contentEquals(""));
     	assertTrue(!song2.getIdSong().contentEquals(""));
@@ -99,6 +99,6 @@ public class TestSong
     	assertTrue(!song7.getDate().contentEquals(""));
     	assertTrue(!song8.getDate().contentEquals(""));
     	assertTrue(!song9.getDate().contentEquals(""));
-    }
+    }*/
     
 }

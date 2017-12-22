@@ -32,8 +32,74 @@ public class TestDaoSong_it7
     }
     
     @Test
+    public void testSearchByTitlePart(){
+    	String title="pacito";
+    	dao.searchSongTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(song.getTitle().contentEquals(title));
+    }
+    
+    @Test
+    public void testSearchByTitleNonExistent(){
+    	//datos de prueba
+    	String title=("");
+    	dao.searchSongTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(song.getTitle().contentEquals(title));
+    }
+    
+    @Test
+    public void testSearchByTitleMaximumCharacter(){
+    	//datos de prueba
+    	String title= "qwertyuiopasdfghjklñzxcvbn"
+    			+ "mqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjk"
+    			+ "lñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwe"
+    			+ "rtyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqw"
+    			+ "ertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghj"
+    			+ "klñzxcvbnm";
+    	dao.searchSongTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(song.getTitle().contentEquals(title));
+    }
+    
+    @Test
     public void testSearchBySinger(){
     	String singer=song.getSinger();
+    	dao.searchSongSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(song.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerPart(){
+    	String singer="Fonsi";
+    	dao.searchSongSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(song.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerNonExistent(){
+    	//datos de prueba
+    	String singer=("");
+    	dao.searchSongSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(song.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerMaximumCharacter(){
+    	//datos de prueba
+    	String singer= "qwertyuiopasdfghjklñzxcvbn"
+    			+ "mqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjk"
+    			+ "lñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwe"
+    			+ "rtyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqw"
+    			+ "ertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghj"
+    			+ "klñzxcvbnm";
     	dao.searchSongSinger(singer);
     	//variable which will contains in the database.
     	assertTrue(song.getSinger().contentEquals(singer));

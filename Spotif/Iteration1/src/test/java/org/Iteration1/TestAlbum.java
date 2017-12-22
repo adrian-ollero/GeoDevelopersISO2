@@ -43,7 +43,7 @@ public class TestAlbum
     	
     }
     
-    @Test
+    /*@Test
     public void testObtainIdAlbum(){
     	assertTrue(!album.getIdAlbum().contentEquals(""));
     	assertTrue(!album2.getIdAlbum().contentEquals(""));
@@ -121,6 +121,6 @@ public class TestAlbum
     	assertTrue(!(album7.getListSongs().length > 0));
     	assertTrue(album8.getListSongs().length > 0);
     	assertTrue(album9.getListSongs().length > 0);
-    }
+    }*/
     
 }

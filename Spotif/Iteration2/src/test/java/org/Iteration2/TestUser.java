@@ -24,7 +24,7 @@ public class TestUser
     	user3 = new User("String with more than 255 characters","null");
     }
     
-    @Test
+    /*@Test
     public void testObatainUser(){
     	assertTrue(!user.getUser().contentEquals(""));
     	assertTrue(!user2.getUser().contentEquals(""));
@@ -56,6 +56,6 @@ public class TestUser
     	assertTrue(!user2.getPassword().contentEquals(""));
     	assertTrue(!user3.getUser().contentEquals(""));
     	assertTrue(!user3.getPassword().contentEquals(""));
-    }
+    }*/
     
 }

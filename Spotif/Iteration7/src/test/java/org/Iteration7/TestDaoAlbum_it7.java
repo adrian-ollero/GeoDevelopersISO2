@@ -26,8 +26,41 @@ public class TestDaoAlbum_it7
     }
     
     @Test
-    public void testSearchByTitle(){
+    public void testSearchByTitleOriginal(){
     	String title=album.getTitle();
+    	dao.searchAlbumTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(album.getTitle().contentEquals(title));
+    }
+    
+    @Test
+    public void testSearchByTitlePart(){
+    	String title="pacito";
+    	dao.searchAlbumTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(album.getTitle().contentEquals(title));
+    }
+    
+    @Test
+    public void testSearchByTitleNonExistent(){
+    	//datos de prueba
+    	String title=("");
+    	dao.searchAlbumTitle(title);
+    	//variable which will contains in the database.
+    	assertTrue(album.getTitle().contentEquals(title));
+    }
+    
+    @Test
+    public void testSearchByTitleMaximumCharacter(){
+    	//datos de prueba
+    	String title= "qwertyuiopasdfghjklñzxcvbn"
+    			+ "mqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjk"
+    			+ "lñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwe"
+    			+ "rtyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqw"
+    			+ "ertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghj"
+    			+ "klñzxcvbnm";
     	dao.searchAlbumTitle(title);
     	//variable which will contains in the database.
     	assertTrue(album.getTitle().contentEquals(title));
@@ -36,6 +69,39 @@ public class TestDaoAlbum_it7
     @Test
     public void testSearchBySinger(){
     	String singer=album.getSinger();
+    	dao.searchAlbumSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(album.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerPart(){
+    	String singer="Fonsi";
+    	dao.searchAlbumSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(album.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerNonExistent(){
+    	//datos de prueba
+    	String singer=("");
+    	dao.searchAlbumSinger(singer);
+    	//variable which will contains in the database.
+    	assertTrue(album.getSinger().contentEquals(singer));
+    }
+    
+    @Test
+    public void testSearchBySingerMaximumCharacter(){
+    	//datos de prueba
+    	String singer= "qwertyuiopasdfghjklñzxcvbn"
+    			+ "mqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjk"
+    			+ "lñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwe"
+    			+ "rtyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqw"
+    			+ "ertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuio"
+    			+ "pasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghj"
+    			+ "klñzxcvbnm";
     	dao.searchAlbumSinger(singer);
     	//variable which will contains in the database.
     	assertTrue(album.getSinger().contentEquals(singer));

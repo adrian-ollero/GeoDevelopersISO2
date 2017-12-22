@@ -30,10 +30,10 @@ public class TestUser_it4
     	user.getListSongs().add(song2);
     }
     
-    @Test
+    /*@Test
     public void testObtainSongs(){
     	assertTrue(user.getListSongs().size() > 0);
-    }
+    }*/
     
     @Test
     public void testCalculateTotalPrice(){

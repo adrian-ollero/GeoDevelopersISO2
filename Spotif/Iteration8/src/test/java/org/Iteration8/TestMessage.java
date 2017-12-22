@@ -30,7 +30,7 @@ public class TestMessage
     	message6 = new Message(1456789347,"FutbolSupporters","escolta15","Have you hear the new song of Luis Fonsi?");
     }
     
-    @Test
+    /*@Test
     public void testObtainIdMessage(){
     	assertTrue(message.getIdMessage() >= 0 || message.getIdMessage() <= 0);
     	assertTrue(message2.getIdMessage() >= 0 || message2.getIdMessage() <= 0);
@@ -68,7 +68,7 @@ public class TestMessage
     	assertTrue(!message4.getDescription().contentEquals(""));
     	assertTrue(!message5.getDescription().contentEquals(""));
     	assertTrue(!message6.getDescription().contentEquals(""));
-    }
+    }*/
     
     @Test
     public void testExistentSender(){
