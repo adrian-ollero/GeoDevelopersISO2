@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration1.TestDaoSong
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.Iteration1.TestDaoSong
+testAddSong(org.Iteration1.TestDaoSong)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong.addSong(DaoSong.java:14)
+	at org.Iteration1.TestDaoSong.testAddSong(TestDaoSong.java:28)
+
