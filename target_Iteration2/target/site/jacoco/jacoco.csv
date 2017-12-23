@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Iteration2,Persistence,DBBroker_it2,112,0,4,0,41,0,11,0,9,0
+Iteration2,Domain,DaoUser,6,0,0,0,4,0,4,0,4,0
+Iteration2,Domain,User,17,0,0,0,8,0,5,0,5,0
+Iteration2,Presentation,LoginInterface,163,0,0,0,33,0,3,0,3,0
+Iteration2,Presentation,LoginInterface.new Runnable() {...},16,0,0,0,7,0,2,0,2,0

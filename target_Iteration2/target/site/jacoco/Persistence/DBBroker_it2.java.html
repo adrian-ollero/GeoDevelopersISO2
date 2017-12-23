@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DBBroker_it2.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteration2</a> &gt; <a href="index.source.html" class="el_package">Persistence</a> &gt; <span class="el_source">DBBroker_it2.java</span></div><h1>DBBroker_it2.java</h1><pre class="source lang-java linenums">package Persistence;
+
+import java.sql.*;
+import java.util.*;
+
+public class DBBroker_it2 {
+<span class="nc" id="L7">    protected static DBBroker_it2 mInstancia=null;</span>
+    protected static Connection mBD;
+<span class="nc" id="L9">    private static String url=&quot;&quot;; </span>
+<span class="nc" id="L10">    private static String driver=&quot;com.mysql.jdbc.Driver&quot;;</span>
+    
+<span class="nc" id="L12">    private DBBroker_it2()throws Exception {</span>
+<span class="nc" id="L13">    	conectar();</span>
+    		
+<span class="nc" id="L15">    }</span>
+    
+    public static DBBroker_it2 getAgente() throws Exception{
+<span class="nc bnc" id="L18" title="All 2 branches missed.">          if (mInstancia==null){</span>
+<span class="nc" id="L19">          mInstancia=new DBBroker_it2();</span>
+        }
+<span class="nc" id="L21">        return mInstancia;</span>
+     }
+ 
+    private void conectar() throws Exception {
+<span class="nc" id="L25">         Class.forName(driver);</span>
+<span class="nc" id="L26">         mBD=DriverManager.getConnection(url);</span>
+<span class="nc" id="L27">    }</span>
+
+    
+    public void desconectar() throws Exception{
+<span class="nc" id="L31">    	mBD.close();</span>
+<span class="nc" id="L32">    }</span>
+
+    public int insert(String SQL) throws SQLException, Exception{ 
+<span class="nc" id="L35">     	conectar();</span>
+<span class="nc" id="L36">    	PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="nc" id="L37">    	int res=stmt.executeUpdate();</span>
+<span class="nc" id="L38">    	stmt.close();</span>
+<span class="nc" id="L39">    	desconectar();</span>
+<span class="nc" id="L40">    	return res;</span>
+    }
+    
+    public int delete(String SQL) throws SQLException,Exception{
+<span class="nc" id="L44">    	PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="nc" id="L45">    	int res=stmt.executeUpdate();</span>
+<span class="nc" id="L46">    	stmt.close();</span>
+<span class="nc" id="L47">    	desconectar();</span>
+<span class="nc" id="L48">    	return res;</span>
+    }
+    
+    public int update(String SQL) throws SQLException,Exception{
+<span class="nc" id="L52">    	conectar();</span>
+<span class="nc" id="L53">    	PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="nc" id="L54">    	int res=stmt.executeUpdate();</span>
+<span class="nc" id="L55">    	stmt.close();</span>
+<span class="nc" id="L56">    	desconectar();</span>
+<span class="nc" id="L57">    	return res;</span>
+    }
+    
+    
+    public Vector&lt;Object&gt; select(String SQL) throws SQLException,Exception{
+
+<span class="nc" id="L63">    	conectar();</span>
+<span class="nc" id="L64">    	PreparedStatement stmt=mBD.prepareStatement(SQL);</span>
+<span class="nc" id="L65">    	ResultSet res=stmt.executeQuery();</span>
+
+<span class="nc" id="L67">    	Vector &lt;Object&gt; lista = new Vector &lt;Object&gt;();</span>
+
+<span class="nc bnc" id="L69" title="All 2 branches missed.">    	while(res.next()){</span>
+
+<span class="nc" id="L71">    		Vector&lt;Object&gt; usuario=new Vector &lt;Object&gt;();</span>
+<span class="nc" id="L72">    		usuario.add(res.getString(&quot;Author&quot;));				//columnastabla</span>
+<span class="nc" id="L73">    		usuario.add(res.getString(&quot;Name&quot;));					</span>
+<span class="nc" id="L74">    		lista.add(usuario);</span>
+
+<span class="nc" id="L76">    	} return lista;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
