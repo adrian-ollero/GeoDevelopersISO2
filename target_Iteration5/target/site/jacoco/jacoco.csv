@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Iteration5,Persistence,DBBroker_it5,3,0,0,0,1,0,1,0,1,0
+Iteration5,Domain,User_it5,25,6,4,0,5,2,3,1,1,1
+Iteration5,Domain,DaoAlbum_it5,31,10,0,0,9,3,0,2,0,2
+Iteration5,Domain,DaoSong_it5,31,10,0,0,9,3,0,2,0,2
+Iteration5,Presentation,AppInterface_it5,136,0,0,0,29,0,3,0,3,0
+Iteration5,Presentation,AppAdmin_it5.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
+Iteration5,Presentation,AppAdmin_it5,153,0,0,0,32,0,3,0,3,0
+Iteration5,Presentation,AppInterface_it5.new Runnable() {...},16,0,0,0,7,0,2,0,2,0

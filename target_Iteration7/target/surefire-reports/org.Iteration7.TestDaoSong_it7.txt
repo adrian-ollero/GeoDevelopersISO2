@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration7.TestDaoSong_it7
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.Iteration7.TestDaoSong_it7
+testSearchByTitlePart(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongTitle(DaoSong_it7.java:16)
+	at org.Iteration7.TestDaoSong_it7.testSearchByTitlePart(TestDaoSong_it7.java:37)
+
+testSearchBySinger(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongSinger(DaoSong_it7.java:32)
+	at org.Iteration7.TestDaoSong_it7.testSearchBySinger(TestDaoSong_it7.java:70)
+
+testSearchBySingerNonExistent(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongSinger(DaoSong_it7.java:32)
+	at org.Iteration7.TestDaoSong_it7.testSearchBySingerNonExistent(TestDaoSong_it7.java:87)
+
+testSearchByTitle(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongTitle(DaoSong_it7.java:16)
+	at org.Iteration7.TestDaoSong_it7.testSearchByTitle(TestDaoSong_it7.java:29)
+
+testSearchBySingerMaximumCharacter(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongSinger(DaoSong_it7.java:32)
+	at org.Iteration7.TestDaoSong_it7.testSearchBySingerMaximumCharacter(TestDaoSong_it7.java:103)
+
+testSearchByTitleNonExistent(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongTitle(DaoSong_it7.java:16)
+	at org.Iteration7.TestDaoSong_it7.testSearchByTitleNonExistent(TestDaoSong_it7.java:46)
+
+testSearchBySingerPart(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongSinger(DaoSong_it7.java:32)
+	at org.Iteration7.TestDaoSong_it7.testSearchBySingerPart(TestDaoSong_it7.java:78)
+
+testSearchByTitleMaximumCharacter(org.Iteration7.TestDaoSong_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoSong_it7.searchSongTitle(DaoSong_it7.java:16)
+	at org.Iteration7.TestDaoSong_it7.testSearchByTitleMaximumCharacter(TestDaoSong_it7.java:62)
+

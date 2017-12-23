@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration5.TestDaoAlbum_it5
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.391 sec <<< FAILURE! - in org.Iteration5.TestDaoAlbum_it5
+testDeleteAlbum(org.Iteration5.TestDaoAlbum_it5)  Time elapsed: 0.046 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoAlbum_it5.deleteAlbum(DaoAlbum_it5.java:16)
+	at org.Iteration5.TestDaoAlbum_it5.testDeleteAlbum(TestDaoAlbum_it5.java:30)
+

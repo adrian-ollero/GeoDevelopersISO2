@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration6.TestDaoUser_it6
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.346 sec <<< FAILURE! - in org.Iteration6.TestDaoUser_it6
+testDeleteUser(org.Iteration6.TestDaoUser_it6)  Time elapsed: 0.043 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at Domain.DaoUser_it6.deleteUser(DaoUser_it6.java:15)
+	at org.Iteration6.TestDaoUser_it6.testDeleteUser(TestDaoUser_it6.java:28)
+
