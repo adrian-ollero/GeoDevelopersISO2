@@ -19,7 +19,7 @@ public class TestDaoSong_it5
     
     @Before
     public void setUp(){
-    	song = new Song_it3("306578981qwe","Despacito","Luis Fonsi ft. Dady Yankee",2.99,"12-01-2017");
+    	song = new Song_it3("306578981qwe","Despacito","Luis Fonsi ft. Daddy Yankee",2.99,"12-01-2017");
     	dao = new DaoSong_it5();
     }
     
