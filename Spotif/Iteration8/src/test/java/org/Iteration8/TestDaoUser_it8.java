@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import Domain.DaoUser_it8;
-import Domain.Message;
+import domain.DaoUser_it8;
+import domain.Message;
 
 /**
  * Unit test for simple App.

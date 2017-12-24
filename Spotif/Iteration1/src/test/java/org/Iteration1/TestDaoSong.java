@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Domain.DaoSong;
-import Domain.Song;
+import domain.DaoSong;
+import domain.Song;
 
 /**
  * Unit test for simple App.

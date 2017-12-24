@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Domain.DaoUser_it6;
-import Domain.User;
+import domain.DaoUser_it6;
+import domain.User;
 
 /**
  * Unit test for simple App.

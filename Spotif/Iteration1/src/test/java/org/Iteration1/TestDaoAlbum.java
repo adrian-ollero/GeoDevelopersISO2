@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Domain.Album;
-import Domain.DaoAlbum;
-import Domain.Song;
+import domain.Album;
+import domain.DaoAlbum;
+import domain.Song;
 
 /**
  * Unit test for simple App.

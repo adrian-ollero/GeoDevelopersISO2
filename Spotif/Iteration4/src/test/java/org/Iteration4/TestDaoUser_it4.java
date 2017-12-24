@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import Domain.DaoAlbum_it3;
-import Domain.DaoUser_it4;
-import Domain.Song_it3;
-import Domain.User_it4;
+import domain.DaoAlbum_it3;
+import domain.DaoUser_it4;
+import domain.Song_it3;
+import domain.User_it4;
 
 /**
  * Unit test for simple App.
