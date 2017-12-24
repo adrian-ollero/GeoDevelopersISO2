@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration5.TestUser_it5
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.Iteration5.TestUser_it5
+testDeleteSongs(org.Iteration5.TestUser_it5)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.Iteration5.TestUser_it5.setUp(TestUser_it5.java:29)
+

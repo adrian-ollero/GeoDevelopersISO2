@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-24T03:47:50.596">
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\domain\DaoAlbum_it7.java">
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="20" rule="ImportFromSamePackage" ruleset="Import Statements" package="domain" class="DaoAlbum_it7" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\domain\DaoSong_it7.java">
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="19" rule="ImportFromSamePackage" ruleset="Import Statements" package="domain" class="DaoSong_it7" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\persistence\DBBroker_it7.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="28" rule="ImportFromSamePackage" ruleset="Import Statements" package="persistence" class="DBBroker_it7" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\domain\Album.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="12" column="26" severity="error" message="Variable &apos;idAlbum&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="16" column="26" severity="error" message="Variable &apos;title&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="20" column="26" severity="error" message="Variable &apos;singer&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="24" column="26" severity="error" message="Variable &apos;price&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="28" column="26" severity="error" message="Variable &apos;date&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="32" column="26" severity="error" message="Variable &apos;listSongs&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="42" column="22" severity="error" message="Parameter idAlbum should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="29" severity="error" message="&apos;idAlbum&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="29" severity="error" message="Expected @param tag for &apos;idAlbum&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="42" column="38" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="45" severity="error" message="&apos;title&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="45" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="42" column="52" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="59" severity="error" message="&apos;singer&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="59" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="42" column="67" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="74" severity="error" message="&apos;price&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="74" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="42" column="81" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="88" severity="error" message="&apos;date&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="88" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="42" column="94" severity="error" message="Parameter listSongs should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="101" severity="error" message="&apos;listSongs&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="42" column="101" severity="error" message="Expected @param tag for &apos;listSongs&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="54" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="54" column="9" severity="error" message="Method &apos;getIdAlbum&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="61" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="61" column="9" severity="error" message="Method &apos;getTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="68" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="68" column="9" severity="error" message="Method &apos;getSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="75" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="75" column="9" severity="error" message="Method &apos;getPrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="82" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="82" column="9" severity="error" message="Method &apos;getDate&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="90" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="90" column="9" severity="error" message="Method &apos;getListSongs&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\domain\DaoAlbum.java">
+<error line="15" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="9" severity="error" message="Method &apos;addAlbum&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="30" severity="error" message="Parameter album should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="36" severity="error" message="Expected @param tag for &apos;album&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\domain\DaoSong.java">
+<error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.sql.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="13" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="17" column="9" severity="error" message="Method &apos;addSong&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="17" column="29" severity="error" message="Parameter song should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="17" column="34" severity="error" message="Expected @param tag for &apos;song&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\domain\Song.java">
+<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="12" column="26" severity="error" message="Variable &apos;idSong&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="16" column="26" severity="error" message="Variable &apos;title&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="20" column="26" severity="error" message="Variable &apos;singer&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="24" column="26" severity="error" message="Variable &apos;price&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="28" column="26" severity="error" message="Variable &apos;date&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="37" column="21" severity="error" message="Parameter idSong should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="37" column="28" severity="error" message="&apos;idSong&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="37" column="28" severity="error" message="Expected @param tag for &apos;idSong&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="36" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="37" column="43" severity="error" message="&apos;title&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="37" column="43" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="50" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="37" column="57" severity="error" message="&apos;singer&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="37" column="57" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="65" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="37" column="72" severity="error" message="&apos;price&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="37" column="72" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="79" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="37" column="86" severity="error" message="&apos;date&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="37" column="86" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="48" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="48" column="9" severity="error" message="Method &apos;getIdSong&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="55" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="55" column="9" severity="error" message="Method &apos;getTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="62" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="62" column="9" severity="error" message="Method &apos;getSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="69" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="69" column="9" severity="error" message="Method &apos;getPrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="76" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="76" column="9" severity="error" message="Method &apos;getDate&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\persistence\DBBroker.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="11" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="14" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="14" column="9" severity="error" message="Method &apos;getConnection&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration1\src\main\java\Presentation\AppInterface.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="95" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="95" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration2\src\main\java\domain\DaoUser.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="9" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration2\src\main\java\domain\User.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="22" column="21" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="22" column="28" severity="error" message="&apos;user&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="22" column="28" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="22" column="34" severity="error" message="Parameter password should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="22" column="41" severity="error" message="&apos;password&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="22" column="41" severity="error" message="Expected @param tag for &apos;password&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="30" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="30" column="9" severity="error" message="Method &apos;getUser&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="37" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="37" column="9" severity="error" message="Method &apos;getPassword&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="45" column="26" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="45" column="33" severity="error" message="&apos;user&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="45" column="33" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="45" column="39" severity="error" message="Parameter password should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="45" column="46" severity="error" message="&apos;password&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="45" column="46" severity="error" message="Expected @param tag for &apos;password&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="53" column="28" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="53" column="35" severity="error" message="&apos;user&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="53" column="35" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="53" column="41" severity="error" message="Parameter password should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="53" column="48" severity="error" message="&apos;password&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="53" column="48" severity="error" message="Expected @param tag for &apos;password&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration2\src\main\java\persistence\DBBroker_it2.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.sql.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="4" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="10" severity="error" message="Class DBBroker_it2 should be declared as final." source="com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck"/>
+<error line="10" column="14" severity="error" message="Name &apos;DBBroker_it2&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="15" column="35" severity="error" message="Variable &apos;mInstancia&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="19" column="33" severity="error" message="Variable &apos;mBD&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="32" column="34" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="33" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="40" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="51" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="50" column="36" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="58" column="38" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="68" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="68" column="23" severity="error" message="Parameter sql should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="68" column="30" severity="error" message="Expected @param tag for &apos;sql&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="68" column="42" severity="error" message="Expected @throws tag for &apos;SQLException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="68" column="56" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="23" severity="error" message="Parameter sql should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="83" column="30" severity="error" message="Expected @param tag for &apos;sql&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="42" severity="error" message="Expected @throws tag for &apos;SQLException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="83" column="56" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="23" severity="error" message="Parameter sql should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="97" column="30" severity="error" message="Expected @param tag for &apos;sql&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="42" severity="error" message="Expected @throws tag for &apos;SQLException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="97" column="56" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="112" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="112" column="34" severity="error" message="Parameter sql should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="112" column="41" severity="error" message="Expected @param tag for &apos;sql&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="112" column="53" severity="error" message="Expected @throws tag for &apos;SQLException&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="112" column="67" severity="error" message="Expected @throws tag for &apos;Exception&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration2\src\main\java\Presentation\LoginInterface.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="20" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="283" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="283" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\Album_it3.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - domain.Album." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="4" column="1" severity="error" message="Redundant import from the same package - domain.Song." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="10" column="14" severity="error" message="Name &apos;Album_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="12" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="20" column="26" severity="error" message="Parameter idAlbum should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="33" severity="error" message="Expected @param tag for &apos;idAlbum&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="42" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="49" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="56" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="63" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="71" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="78" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="85" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="92" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="98" severity="error" message="Parameter listSongs should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="105" severity="error" message="Expected @param tag for &apos;listSongs&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="27" column="9" severity="error" message="Method &apos;setidAlbum&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="27" column="32" severity="error" message="Parameter idAlbum should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="27" column="39" severity="error" message="Expected @param tag for &apos;idAlbum&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="34" column="9" severity="error" message="Method &apos;setTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="34" column="30" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="34" column="37" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="41" column="9" severity="error" message="Method &apos;setSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="41" column="31" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="41" column="38" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="48" column="9" severity="error" message="Method &apos;setPrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="48" column="30" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="48" column="37" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="55" column="9" severity="error" message="Method &apos;setDate&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="55" column="29" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" column="36" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\DaoAlbum_it3.java">
+<error line="14" column="14" severity="error" message="Name &apos;DaoAlbum_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="9" severity="error" message="Method &apos;changePrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="33" severity="error" message="Parameter album should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="43" severity="error" message="Expected @param tag for &apos;album&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\DaoSong_it3.java">
+<error line="14" column="14" severity="error" message="Name &apos;DaoSong_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="9" severity="error" message="Method &apos;changePrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="33" severity="error" message="Parameter song should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="42" severity="error" message="Expected @param tag for &apos;song&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\Song_it3.java">
+<error line="3" column="1" severity="error" message="Redundant import from the same package - domain.Song." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;Song_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="11" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="18" column="25" severity="error" message="Parameter idSong should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="32" severity="error" message="Expected @param tag for &apos;idSong&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="18" column="40" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="47" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="18" column="54" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="61" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="18" column="69" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="76" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="18" column="83" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="18" column="90" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="26" column="9" severity="error" message="Method &apos;setTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="26" column="30" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="26" column="37" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="33" column="9" severity="error" message="Method &apos;setSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="33" column="31" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="33" column="38" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="9" severity="error" message="Method &apos;setPrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="40" column="30" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="40" column="37" severity="error" message="Expected @param tag for &apos;price&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="47" column="9" severity="error" message="Method &apos;setDate&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="47" column="29" severity="error" message="Parameter date should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="47" column="36" severity="error" message="Expected @param tag for &apos;date&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="54" column="9" severity="error" message="Method &apos;setSong&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="54" column="29" severity="error" message="Parameter idSong should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="54" column="36" severity="error" message="Expected @param tag for &apos;idSong&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\persistence\DBBroker_it3.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="10" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\Presentation\AppInterface_it3.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppInterface_it3&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="31" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="31" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration4\src\main\java\domain\DaoUser_it4.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;DaoUser_it4&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="9" severity="error" message="Method &apos;buy&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="25" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="34" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration4\src\main\java\domain\User_it4.java">
+<error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="5" column="1" severity="error" message="Redundant import from the same package - domain.Song_it3." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="6" column="1" severity="error" message="Redundant import from the same package - domain.User." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="12" column="14" severity="error" message="Name &apos;User_it4&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="14" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="17" column="39" severity="error" message="Variable &apos;songs&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="24" column="25" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="24" column="32" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="24" column="38" severity="error" message="Parameter password should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="24" column="45" severity="error" message="Expected @param tag for &apos;password&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="24" column="55" severity="error" message="Parameter songs should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="24" column="75" severity="error" message="&apos;songs&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="24" column="75" severity="error" message="Expected @param tag for &apos;songs&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="32" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="32" column="9" severity="error" message="Method &apos;getListSongs&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="39" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="39" column="9" severity="error" message="Method &apos;calculateTotalPrice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration4\src\main\java\persistence\DBBroker_it4.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it4&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="10" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration4\src\main\java\Presentation\AppInterface_it4.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppInterface_it4&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="27" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="27" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\domain\DaoAlbum_it5.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" column="1" severity="error" message="Redundant import from the same package - domain.Album_it3." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="15" column="14" severity="error" message="Name &apos;DaoAlbum_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="20" column="9" severity="error" message="Method &apos;deleteAlbum&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="20" column="33" severity="error" message="Parameter album should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="43" severity="error" message="Expected @param tag for &apos;album&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\domain\DaoSong_it5.java">
+<error line="8" column="1" severity="error" message="Redundant import from the same package - domain.Song_it3." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="15" column="14" severity="error" message="Name &apos;DaoSong_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="20" column="9" severity="error" message="Method &apos;deleteSong&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="20" column="32" severity="error" message="Parameter song should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="41" severity="error" message="Expected @param tag for &apos;song&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\domain\User_it5.java">
+<error line="3" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="5" column="1" severity="error" message="Redundant import from the same package - domain.Song_it3." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="6" column="1" severity="error" message="Redundant import from the same package - domain.User_it4." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="12" column="14" severity="error" message="Name &apos;User_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="14" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="25" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="32" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="19" column="38" severity="error" message="Parameter password should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="45" severity="error" message="Expected @param tag for &apos;password&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="19" column="55" severity="error" message="Parameter songs should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="75" severity="error" message="Expected @param tag for &apos;songs&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="27" column="9" severity="error" message="Method &apos;deleteSong&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="27" column="32" severity="error" message="Parameter idSong should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="27" column="39" severity="error" message="Expected @param tag for &apos;idSong&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\persistence\DBBroker_it5.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="10" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\Presentation\AppAdmin_it5.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppAdmin_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="107" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="107" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration5\src\main\java\Presentation\AppInterface_it5.java">
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppInterface_it5&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="103" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="103" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration6\src\main\java\domain\DaoUser_it6.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" column="1" severity="error" message="Redundant import from the same package - domain.User." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="15" column="14" severity="error" message="Name &apos;DaoUser_it6&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="19" column="9" severity="error" message="Method &apos;deleteUser&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="19" column="32" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="19" column="37" severity="error" message="Expected @param tag for &apos;user&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration6\src\main\java\persistence\DBBroker_it6.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it6&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration6\src\main\java\Presentation\AppAdmin_it6.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppAdmin_it6&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="31" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="31" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\domain\DaoAlbum_it7.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" column="1" severity="error" message="Redundant import from the same package - domain.Album." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="15" column="14" severity="error" message="Name &apos;DaoAlbum_it7&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="20" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="9" severity="error" message="Method &apos;searchAlbumTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="20" column="39" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="46" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="9" severity="error" message="Method &apos;searchAlbumSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="40" column="40" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="40" column="47" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\domain\DaoSong_it7.java">
+<error line="8" column="1" severity="error" message="Redundant import from the same package - domain.Song." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="15" column="14" severity="error" message="Name &apos;DaoSong_it7&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="20" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="20" column="9" severity="error" message="Method &apos;searchSongTitle&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="20" column="37" severity="error" message="Parameter title should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="44" severity="error" message="Expected @param tag for &apos;title&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="40" column="9" severity="error" message="Method &apos;searchSongSinger&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="40" column="38" severity="error" message="Parameter singer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="40" column="45" severity="error" message="Expected @param tag for &apos;singer&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\persistence\DBBroker_it7.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it7&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\Presentation\AppAdmin_it7.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppAdmin_it7&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="43" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="43" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration7\src\main\java\Presentation\AppInterface_it7.java">
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppInterface_it7&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="111" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="111" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration8\src\main\java\domain\DaoUser_it8.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="7" column="14" severity="error" message="Name &apos;DaoUser_it8&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="9" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="12" column="33" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="12" column="41" severity="error" message="Expected @param tag for &apos;message&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration8\src\main\java\domain\Message.java">
+<error line="8" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="12" column="24" severity="error" message="Variable &apos;idMessage&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="16" column="26" severity="error" message="Variable &apos;sender&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="20" column="26" severity="error" message="Variable &apos;receiver&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="24" column="26" severity="error" message="Variable &apos;description&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="32" column="24" severity="error" message="Parameter idMessage should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="32" column="29" severity="error" message="&apos;idMessage&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="32" column="29" severity="error" message="Expected @param tag for &apos;idMessage&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="32" column="40" severity="error" message="Parameter sender should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="32" column="47" severity="error" message="&apos;sender&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="32" column="47" severity="error" message="Expected @param tag for &apos;sender&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="32" column="55" severity="error" message="Parameter receiver should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="32" column="62" severity="error" message="&apos;receiver&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="32" column="62" severity="error" message="Expected @param tag for &apos;receiver&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="32" column="72" severity="error" message="Parameter description should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="32" column="79" severity="error" message="&apos;description&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="32" column="79" severity="error" message="Expected @param tag for &apos;description&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="43" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="43" column="9" severity="error" message="Method &apos;getIdMessage&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="50" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="50" column="9" severity="error" message="Method &apos;getSender&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="58" column="9" severity="error" message="Method &apos;setSender&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="58" column="31" severity="error" message="Parameter sender should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="58" column="38" severity="error" message="&apos;sender&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="58" column="38" severity="error" message="Expected @param tag for &apos;sender&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="65" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="65" column="9" severity="error" message="Method &apos;getReceiver&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="72" column="9" severity="error" message="Method &apos;setReceiver&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="72" column="33" severity="error" message="Parameter receiver should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="72" column="40" severity="error" message="&apos;receiver&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="72" column="40" severity="error" message="Expected @param tag for &apos;receiver&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="79" severity="error" message="Expected an @return tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="79" column="9" severity="error" message="Method &apos;getDescription&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="86" column="9" severity="error" message="Method &apos;setDescription&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="86" column="36" severity="error" message="Parameter description should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="43" severity="error" message="&apos;description&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="86" column="43" severity="error" message="Expected @param tag for &apos;description&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration8\src\main\java\persistence\DBBroker_it8.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="3" column="1" severity="error" message="Redundant import from the same package - persistence.DBBroker_it7." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
+<error line="9" column="14" severity="error" message="Name &apos;DBBroker_it8&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="11" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration8\src\main\java\Presentation\AppAdmin_it8.java">
+<error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppAdmin_it8&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="35" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="35" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration8\src\main\java\Presentation\AppInterface_it8.java">
+<error line="1" column="9" severity="error" message="Name &apos;Presentation&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="14" column="14" severity="error" message="Name &apos;AppInterface_it8&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
+<error line="16" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="43" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="43" column="42" severity="error" message="Expected @param tag for &apos;args&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+</checkstyle>

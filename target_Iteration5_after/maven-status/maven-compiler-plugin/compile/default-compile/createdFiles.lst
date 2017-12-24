@@ -1,0 +1,8 @@
+domain\User_it5.class
+persistence\DBBroker_it5.class
+domain\DaoAlbum_it5.class
+domain\DaoSong_it5.class
+Presentation\AppAdmin_it5$1.class
+Presentation\AppInterface_it5.class
+Presentation\AppAdmin_it5.class
+Presentation\AppInterface_it5$1.class

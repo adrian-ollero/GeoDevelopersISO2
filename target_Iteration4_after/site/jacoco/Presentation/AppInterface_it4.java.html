@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AppInterface_it4.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteration4</a> &gt; <a href="index.source.html" class="el_package">Presentation</a> &gt; <span class="el_source">AppInterface_it4.java</span></div><h1>AppInterface_it4.java</h1><pre class="source lang-java linenums">package Presentation;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextPane;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+
+/**
+ * @author Pablo
+ *
+ */
+public class AppInterface_it4 extends AppInterface_it3 {
+
+	/**
+	 * 
+	 */
+	private JFrame frame;
+	
+	/**
+	 * Launch the application.
+	 */
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L28">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L31">					AppInterface_it4 window = new AppInterface_it4();</span>
+<span class="nc" id="L32">					window.frame.setVisible(true);</span>
+<span class="nc" id="L33">				} catch (Exception e) {</span>
+<span class="nc" id="L34">					e.printStackTrace();</span>
+<span class="nc" id="L35">				}</span>
+<span class="nc" id="L36">			}</span>
+		});
+<span class="nc" id="L38">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+	/**
+	 * 
+	 */
+<span class="nc" id="L46">	public AppInterface_it4() {</span>
+<span class="nc" id="L47">		initialize();</span>
+<span class="nc" id="L48">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	/**
+	 * 
+	 */
+	private void initialize() {
+<span class="nc" id="L57">		frame = new JFrame();</span>
+<span class="nc" id="L58">		frame.setBounds(X_FRAME, Y_FRAME, WIDTH_FRAME, HEIGHT_FRAME);</span>
+<span class="nc" id="L59">		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L60">		frame.getContentPane().setLayout(null);</span>
+		
+<span class="nc" id="L62">		JTextPane txtpnTheSpectreTu = new JTextPane();</span>
+<span class="nc" id="L63">		txtpnTheSpectreTu.setText(&quot;The spectre\r\nTu foto\r\nFaded\r\nNunca me olvides\r\nHigher&quot;);</span>
+<span class="nc" id="L64">		txtpnTheSpectreTu.setBounds(X_TXT, Y_TXT, WIDTH_TXT, HEIGHT_TXT);</span>
+<span class="nc" id="L65">		frame.getContentPane().add(txtpnTheSpectreTu);</span>
+		
+<span class="nc" id="L67">		JLabel lblSongs = new JLabel(&quot;Songs:&quot;);</span>
+<span class="nc" id="L68">		lblSongs.setBounds(X_LBL, Y_LBL, WIDTH_LBL, HEIGHT_LBL);</span>
+<span class="nc" id="L69">		frame.getContentPane().add(lblSongs);</span>
+		
+<span class="nc" id="L71">		JButton btnNewButton = new JButton(&quot;Add Song&quot;);</span>
+<span class="nc" id="L72">		btnNewButton.setBounds(X_BTN, Y_ADDSONG, WIDTH_BTN, HEIGHT_BTN);</span>
+<span class="nc" id="L73">		frame.getContentPane().add(btnNewButton);</span>
+		
+<span class="nc" id="L75">		JButton btnNewButton1 = new JButton(&quot;Add Album&quot;);</span>
+<span class="nc" id="L76">		btnNewButton1.setBounds(X_BTN, Y_ADDALBUM, WIDTH_BTN, HEIGHT_BTN);</span>
+<span class="nc" id="L77">		frame.getContentPane().add(btnNewButton1);</span>
+		
+<span class="nc" id="L79">		JButton btnNewButton2 = new JButton(&quot;Purchase Songs&quot;);</span>
+<span class="nc" id="L80">		btnNewButton2.setBounds(X_BTN, Y_CHANGEPRICE, WIDTH_BTN, HEIGHT_BTN);</span>
+<span class="nc" id="L81">		frame.getContentPane().add(btnNewButton2);</span>
+<span class="nc" id="L82">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

@@ -1,0 +1,7 @@
+domain\Message.class
+domain\DaoUser_it8.class
+Presentation\AppAdmin_it8.class
+Presentation\AppInterface_it8.class
+persistence\DBBroker_it8.class
+Presentation\AppAdmin_it8$1.class
+Presentation\AppInterface_it8$1.class

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration4.TestDaoUser_it4
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.5 sec <<< FAILURE! - in org.Iteration4.TestDaoUser_it4
+testBuy(org.Iteration4.TestDaoUser_it4)  Time elapsed: 0.078 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.Iteration4.TestDaoUser_it4.setUp(TestDaoUser_it4.java:32)
+

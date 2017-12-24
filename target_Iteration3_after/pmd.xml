@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-24T03:45:43.503">
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\Album_it3.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="20" rule="ImportFromSamePackage" ruleset="Import Statements" package="domain" class="Album_it3" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="19" rule="ImportFromSamePackage" ruleset="Import Statements" package="domain" class="Album_it3" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\domain\Song_it3.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="19" rule="ImportFromSamePackage" ruleset="Import Statements" package="domain" class="Song_it3" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+<file name="C:\Users\Pablo\git\GeoDevelopersISO2\Spotif\Iteration3\src\main\java\persistence\DBBroker_it3.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="28" rule="ImportFromSamePackage" ruleset="Import Statements" package="persistence" class="DBBroker_it3" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#ImportFromSamePackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+</file>
+</pmd>

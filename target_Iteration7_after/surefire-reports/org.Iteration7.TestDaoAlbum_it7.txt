@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration7.TestDaoAlbum_it7
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.671 sec <<< FAILURE! - in org.Iteration7.TestDaoAlbum_it7
+testSearchByTitlePart(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.053 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumTitle(DaoAlbum_it7.java:25)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchByTitlePart(TestDaoAlbum_it7.java:39)
+
+testSearchBySinger(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumSinger(DaoAlbum_it7.java:45)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchBySinger(TestDaoAlbum_it7.java:72)
+
+testSearchBySingerNonExistent(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumSinger(DaoAlbum_it7.java:45)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchBySingerNonExistent(TestDaoAlbum_it7.java:89)
+
+testSearchBySingerMaximumCharacter(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumSinger(DaoAlbum_it7.java:45)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchBySingerMaximumCharacter(TestDaoAlbum_it7.java:105)
+
+testSearchByTitleOriginal(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumTitle(DaoAlbum_it7.java:25)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchByTitleOriginal(TestDaoAlbum_it7.java:31)
+
+testSearchByTitleNonExistent(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumTitle(DaoAlbum_it7.java:25)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchByTitleNonExistent(TestDaoAlbum_it7.java:48)
+
+testSearchBySingerPart(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumSinger(DaoAlbum_it7.java:45)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchBySingerPart(TestDaoAlbum_it7.java:80)
+
+testSearchByTitleMaximumCharacter(org.Iteration7.TestDaoAlbum_it7)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum_it7.searchAlbumTitle(DaoAlbum_it7.java:25)
+	at org.Iteration7.TestDaoAlbum_it7.testSearchByTitleMaximumCharacter(TestDaoAlbum_it7.java:64)
+

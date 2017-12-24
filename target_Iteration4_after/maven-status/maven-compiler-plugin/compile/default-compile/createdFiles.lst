@@ -1,0 +1,5 @@
+persistence\DBBroker_it4.class
+domain\User_it4.class
+Presentation\AppInterface_it4$1.class
+Presentation\AppInterface_it4.class
+domain\DaoUser_it4.class
