@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AppInterface.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteration1</a> &gt; <a href="index.source.html" class="el_package">Presentation</a> &gt; <span class="el_source">AppInterface.java</span></div><h1>AppInterface.java</h1><pre class="source lang-java linenums">package Presentation;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JTextPane;
+import javax.swing.JLabel;
+
+/**
+ * @author Pablo
+ *
+ */
+public class AppInterface {
+
+	/**
+	 * 
+	 */
+	private JFrame frame;
+	/**
+	 * 
+	 */
+	static final int X_FRAME = 100;
+	/**
+	 * 
+	 */
+	static final int Y_FRAME = 100;
+	/**
+	 * 
+	 */
+	static final int WIDTH_FRAME = 320;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_FRAME = 281;
+	/**
+	 * 
+	 */
+	static final int X_TXT = 24;
+	/**
+	 * 
+	 */
+	static final int Y_TXT = 34;
+	/**
+	 * 
+	 */
+	static final int WIDTH_TXT = 150;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_TXT = 197;
+	/**
+	 * 
+	 */
+	static final int X_LBL = 24;
+	/**
+	 * 
+	 */
+	static final int Y_LBL = 9;
+	/**
+	 * 
+	 */
+	static final int WIDTH_LBL = 46;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_LBL = 14;
+	/**
+	 * 
+	 */
+	static final int Y_ADDSONG = 34;
+	/**
+	 * 
+	 */
+	static final int Y_ADDALBUM = 68;
+	/**
+	 * 
+	 */
+	static final int X_BTN = 204;
+	/**
+	 * 
+	 */
+	static final int WIDTH_BTN = 89;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_BTN = 23;
+
+	/**
+	 * Launch the application.
+	 */
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L96">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L99">					AppInterface window = new AppInterface();</span>
+<span class="nc" id="L100">					window.frame.setVisible(true);</span>
+<span class="nc" id="L101">				} catch (Exception e) {</span>
+<span class="nc" id="L102">					e.printStackTrace();</span>
+<span class="nc" id="L103">				}</span>
+<span class="nc" id="L104">			}</span>
+		});
+<span class="nc" id="L106">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+	/**
+	 * 
+	 */
+<span class="nc" id="L114">	public AppInterface() {</span>
+<span class="nc" id="L115">		initialize();</span>
+<span class="nc" id="L116">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	/**
+	 * 
+	 */
+	private void initialize() {
+<span class="nc" id="L125">		frame = new JFrame();</span>
+<span class="nc" id="L126">		frame.setBounds(X_FRAME, Y_FRAME, WIDTH_FRAME, HEIGHT_FRAME);</span>
+<span class="nc" id="L127">		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L128">		frame.getContentPane().setLayout(null);</span>
+		
+<span class="nc" id="L130">		JButton btnAddSong = new JButton(&quot;Add song&quot;);</span>
+<span class="nc" id="L131">		btnAddSong.setBounds(X_BTN, Y_ADDSONG, WIDTH_BTN, HEIGHT_BTN);</span>
+<span class="nc" id="L132">		frame.getContentPane().add(btnAddSong);</span>
+		
+<span class="nc" id="L134">		JTextPane txtpnBlancoYNegro = new JTextPane();</span>
+<span class="nc" id="L135">		txtpnBlancoYNegro.setText(&quot;Blanco y negro\r\nThe Spectre\r\nGirasoles\r\nFaded\r\nTu Foto\r\nEsencial&quot;);</span>
+<span class="nc" id="L136">		txtpnBlancoYNegro.setBounds(X_TXT, Y_TXT, WIDTH_TXT, HEIGHT_TXT);</span>
+<span class="nc" id="L137">		frame.getContentPane().add(txtpnBlancoYNegro);</span>
+		
+<span class="nc" id="L139">		JLabel lblSongs = new JLabel(&quot;Songs&quot;);</span>
+<span class="nc" id="L140">		lblSongs.setBounds(X_LBL, Y_LBL, WIDTH_LBL, HEIGHT_LBL);</span>
+<span class="nc" id="L141">		frame.getContentPane().add(lblSongs);</span>
+		
+<span class="nc" id="L143">		JButton btnAddAlbum = new JButton(&quot;Add album&quot;);</span>
+<span class="nc" id="L144">		btnAddAlbum.setBounds(X_BTN, Y_ADDALBUM, WIDTH_BTN, HEIGHT_BTN);</span>
+<span class="nc" id="L145">		frame.getContentPane().add(btnAddAlbum);</span>
+<span class="nc" id="L146">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

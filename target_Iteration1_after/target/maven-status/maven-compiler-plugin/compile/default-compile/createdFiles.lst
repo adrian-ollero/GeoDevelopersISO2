@@ -1,0 +1,7 @@
+domain\Song.class
+domain\Album.class
+domain\DaoAlbum.class
+Presentation\AppInterface.class
+domain\DaoSong.class
+persistence\DBBroker.class
+Presentation\AppInterface$1.class

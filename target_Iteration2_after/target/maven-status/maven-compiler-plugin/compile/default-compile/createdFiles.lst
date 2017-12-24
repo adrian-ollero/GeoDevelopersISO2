@@ -1,0 +1,5 @@
+domain\DaoUser.class
+domain\User.class
+persistence\DBBroker_it2.class
+Presentation\LoginInterface.class
+Presentation\LoginInterface$1.class

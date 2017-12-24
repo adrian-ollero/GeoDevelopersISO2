@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DBBroker_it2.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteration2</a> &gt; <a href="index.source.html" class="el_package">persistence</a> &gt; <span class="el_source">DBBroker_it2.java</span></div><h1>DBBroker_it2.java</h1><pre class="source lang-java linenums">package persistence;
+
+import java.sql.*;
+import java.util.*;
+
+/**
+ * @author Pablo
+ *
+ */
+public class DBBroker_it2 {
+
+    /**
+     * 
+     */
+<span class="nc" id="L15">    protected static DBBroker_it2 mInstancia = null;</span>
+    /**
+     * 
+     */
+    protected static Connection mBD;
+    /**
+     * 
+     */
+<span class="nc" id="L23">    private static String url = &quot;&quot;; </span>
+    /**
+     * 
+     */
+<span class="nc" id="L27">    private static String driver = &quot;com.mysql.jdbc.Driver&quot;;</span>
+
+    /**
+     * @throws Exception
+     */
+<span class="nc" id="L32">    private DBBroker_it2()throws Exception {</span>
+<span class="nc" id="L33">    	conectar();	</span>
+<span class="nc" id="L34">    }</span>
+    
+    /**
+     * @return
+     * @throws Exception
+     */
+    public static DBBroker_it2 getAgente() throws Exception {
+<span class="nc bnc" id="L41" title="All 2 branches missed.">          if (mInstancia == null) {</span>
+<span class="nc" id="L42">          mInstancia = new DBBroker_it2();</span>
+        }
+<span class="nc" id="L44">        return mInstancia;</span>
+     }
+
+    /**
+     * @throws Exception
+     */
+    private void conectar() throws Exception {
+<span class="nc" id="L51">         Class.forName(driver);</span>
+<span class="nc" id="L52">         mBD = DriverManager.getConnection(url);</span>
+<span class="nc" id="L53">    }</span>
+
+    /**
+     * @throws Exception
+     */
+    public void desconectar() throws Exception {
+<span class="nc" id="L59">    	mBD.close();</span>
+<span class="nc" id="L60">    }</span>
+
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int insert(String sql) throws SQLException, Exception { 
+<span class="nc" id="L69">     	conectar();</span>
+<span class="nc" id="L70">    	PreparedStatement stmt = mBD.prepareStatement(sql);</span>
+<span class="nc" id="L71">    	int res = stmt.executeUpdate();</span>
+<span class="nc" id="L72">    	stmt.close();</span>
+<span class="nc" id="L73">    	desconectar();</span>
+<span class="nc" id="L74">    	return res;</span>
+    }
+    
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int delete(String sql) throws SQLException, Exception {
+<span class="nc" id="L84">    	PreparedStatement stmt = mBD.prepareStatement(sql);</span>
+<span class="nc" id="L85">    	int res = stmt.executeUpdate();</span>
+<span class="nc" id="L86">    	stmt.close();</span>
+<span class="nc" id="L87">    	desconectar();</span>
+<span class="nc" id="L88">    	return res;</span>
+    }
+    
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int update(String sql) throws SQLException, Exception {
+<span class="nc" id="L98">    	conectar();</span>
+<span class="nc" id="L99">    	PreparedStatement stmt = mBD.prepareStatement(sql);</span>
+<span class="nc" id="L100">    	int res = stmt.executeUpdate();</span>
+<span class="nc" id="L101">    	stmt.close();</span>
+<span class="nc" id="L102">    	desconectar();</span>
+<span class="nc" id="L103">    	return res;</span>
+    }
+    
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public Vector&lt;Object&gt; select(String sql) throws SQLException, Exception {
+
+<span class="nc" id="L114">    	conectar();</span>
+<span class="nc" id="L115">    	PreparedStatement stmt = mBD.prepareStatement(sql);</span>
+<span class="nc" id="L116">    	ResultSet res = stmt.executeQuery();</span>
+
+<span class="nc" id="L118">    	Vector&lt;Object&gt; lista = new Vector&lt;Object&gt;();</span>
+
+<span class="nc bnc" id="L120" title="All 2 branches missed.">    	while (res.next()) {</span>
+
+<span class="nc" id="L122">    		Vector&lt;Object&gt; usuario = new Vector&lt;Object&gt;();</span>
+<span class="nc" id="L123">    		usuario.add(res.getString(&quot;Author&quot;));				//columnastabla</span>
+<span class="nc" id="L124">    		usuario.add(res.getString(&quot;Name&quot;));					</span>
+<span class="nc" id="L125">    		lista.add(usuario);</span>
+
+<span class="nc" id="L127">    	} return lista;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

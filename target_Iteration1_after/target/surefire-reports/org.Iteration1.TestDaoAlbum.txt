@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.Iteration1.TestDaoAlbum
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.434 sec <<< FAILURE! - in org.Iteration1.TestDaoAlbum
+testAddAlbum(org.Iteration1.TestDaoAlbum)  Time elapsed: 0.049 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at domain.DaoAlbum.addAlbum(DaoAlbum.java:24)
+	at org.Iteration1.TestDaoAlbum.testAddAlbum(TestDaoAlbum.java:30)
+

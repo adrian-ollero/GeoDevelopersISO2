@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoginInterface.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Iteration2</a> &gt; <a href="index.source.html" class="el_package">Presentation</a> &gt; <span class="el_source">LoginInterface.java</span></div><h1>LoginInterface.java</h1><pre class="source lang-java linenums">package Presentation;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+/**
+ * @author Pablo
+ *
+ */
+/**
+ * @author Pablo
+ *
+ */
+public class LoginInterface {
+
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	private JFrame frame;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	private JTextField textField;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	private JTextField textField1;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_FRAME = 100;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_FRAME = 100;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_FRAME = 257;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_FRAME = 177;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_LBLLOGIN = 30;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_LBLLOGIN = 26;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_LBLLOGIN = 46;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_LBLLOGIN = 14;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_LBLPASSWORD = 10;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_LBLPASSWORD = 51;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_LBLPASSWORD = 55;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_LBLPASSWORD = 14;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_TEXTFIELD = 70;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_TEXTFIELD = 23;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_TEXTFIELD = 161;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_TEXTFIELD = 20;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_TEXTFIELD_1 = 70;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_TEXTFIELD_1 = 48;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_TEXTFIELD_1 = 161;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_TEXTFIELD_1 = 20;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_BTNLOGIN = 166;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_BTNLOGIN = 79;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_BTNLOGIN = 65;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_BTNLOGIN = 28;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_LBLFORGOT = 113;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_LBLFORGOT = 113;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_LBLFORGOT = 118;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_LBLFORGOT = 14;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int X_BTNREGISTER = 80;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int Y_BTNREGISTER  = 79;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int WIDTH_BTNREGISTER = 79;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int HEIGHT_BTNREGISTER  = 28;
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	static final int COLUMNS  = 10;
+
+
+	/**
+	 * Launch the application.
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L284">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L287">					LoginInterface window = new LoginInterface();</span>
+<span class="nc" id="L288">					window.frame.setVisible(true);</span>
+<span class="nc" id="L289">				} catch (Exception e) {</span>
+<span class="nc" id="L290">					e.printStackTrace();</span>
+<span class="nc" id="L291">				}</span>
+<span class="nc" id="L292">			}</span>
+		});
+<span class="nc" id="L294">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+<span class="nc" id="L305">	public LoginInterface() {</span>
+<span class="nc" id="L306">		initialize();</span>
+<span class="nc" id="L307">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	/**
+	 * 
+	 */
+	/**
+	 * 
+	 */
+	private void initialize() {
+<span class="nc" id="L319">		frame = new JFrame();</span>
+<span class="nc" id="L320">		frame.setBounds(X_FRAME, Y_FRAME, WIDTH_FRAME, HEIGHT_FRAME);</span>
+<span class="nc" id="L321">		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L322">		frame.getContentPane().setLayout(null);</span>
+		
+<span class="nc" id="L324">		JLabel lblLogin = new JLabel(&quot;Login:&quot;);</span>
+<span class="nc" id="L325">		lblLogin.setBounds(X_LBLLOGIN, Y_LBLLOGIN, WIDTH_LBLLOGIN, HEIGHT_LBLLOGIN);</span>
+<span class="nc" id="L326">		frame.getContentPane().add(lblLogin);</span>
+		
+<span class="nc" id="L328">		JLabel lblPassword = new JLabel(&quot;Password:&quot;);</span>
+<span class="nc" id="L329">		lblPassword.setBounds(X_LBLPASSWORD, Y_LBLPASSWORD, WIDTH_LBLPASSWORD, HEIGHT_LBLPASSWORD);</span>
+<span class="nc" id="L330">		frame.getContentPane().add(lblPassword);</span>
+		
+<span class="nc" id="L332">		textField = new JTextField();</span>
+<span class="nc" id="L333">		textField.setBounds(X_TEXTFIELD, Y_TEXTFIELD, WIDTH_TEXTFIELD, HEIGHT_TEXTFIELD);</span>
+<span class="nc" id="L334">		frame.getContentPane().add(textField);</span>
+<span class="nc" id="L335">		textField.setColumns(COLUMNS);</span>
+		
+<span class="nc" id="L337">		textField1 = new JTextField();</span>
+<span class="nc" id="L338">		textField1.setBounds(X_TEXTFIELD_1, Y_TEXTFIELD_1, WIDTH_TEXTFIELD_1, HEIGHT_TEXTFIELD_1);</span>
+<span class="nc" id="L339">		frame.getContentPane().add(textField1);</span>
+<span class="nc" id="L340">		textField1.setColumns(COLUMNS);</span>
+		
+<span class="nc" id="L342">		JButton btnLogin = new JButton(&quot;Login&quot;);</span>
+<span class="nc" id="L343">		btnLogin.setBounds(X_BTNLOGIN, Y_BTNLOGIN, WIDTH_BTNLOGIN, HEIGHT_BTNLOGIN);</span>
+<span class="nc" id="L344">		frame.getContentPane().add(btnLogin);</span>
+		
+<span class="nc" id="L346">		JLabel lblForgotYourPassword = new JLabel(&quot;Forgot your password?&quot;);</span>
+<span class="nc" id="L347">		lblForgotYourPassword.setBounds(X_LBLFORGOT, Y_LBLFORGOT, WIDTH_LBLFORGOT, HEIGHT_LBLFORGOT);</span>
+<span class="nc" id="L348">		frame.getContentPane().add(lblForgotYourPassword);</span>
+		
+<span class="nc" id="L350">		JButton btnRegister = new JButton(&quot;Register&quot;);</span>
+<span class="nc" id="L351">		btnRegister.setBounds(X_BTNREGISTER, Y_BTNREGISTER, WIDTH_BTNREGISTER, HEIGHT_BTNREGISTER);</span>
+<span class="nc" id="L352">		frame.getContentPane().add(btnRegister);</span>
+<span class="nc" id="L353">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
