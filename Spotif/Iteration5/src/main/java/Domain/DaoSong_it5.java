@@ -5,16 +5,24 @@ import java.sql.Statement;
 
 import javax.swing.JOptionPane;
 
+import Domain.Song_it3;
 import Persistence.DBBroker;
 
+/**
+ * @author Pablo
+ *
+ */
 public class DaoSong_it5 {
 	//modify in the testing phase
+	/**
+	 * @param song
+	 */
 	public void deleteSong(Song_it3 song) {
-		DBBroker conex= new DBBroker();
+		DBBroker conex = new DBBroker();
 		  try {
 		   Statement estatuto = conex.getConnection();
-		   estatuto.executeUpdate("DELETE FROM song WHERE idSong= "+song.getIdSong());
-		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
+		   estatuto.executeUpdate("DELETE FROM song WHERE idSong= " + song.getIdSong());
+		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "Información", JOptionPane.INFORMATION_MESSAGE);
 		   estatuto.close();
 		   conex.desconectar();
 		    

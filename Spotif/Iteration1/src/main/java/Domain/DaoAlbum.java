@@ -7,15 +7,22 @@ import javax.swing.JOptionPane;
 
 import Persistence.DBBroker;
 
-public class DaoAlbum{
+/**
+ * @author Pablo
+ *
+ */
+public class DaoAlbum {
 	
-	 public void addAlbum(Album album){
+	/**
+	 * @param album
+	 */
+	public void addAlbum(Album album) {
 
-	  DBBroker conex= new DBBroker();
+	  DBBroker conex = new DBBroker();
 	  try {
 	   Statement estatuto = conex.getConnection();
-	   estatuto.executeUpdate("INSERT INTO album VALUES ('"+ album.getIdAlbum()+"', '" +album.getTitle()+"', '"+album.getSinger()+"', '"+album.getPrice()+"', '"+album.getDate()+"')");
-	   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
+	   estatuto.executeUpdate("INSERT INTO album VALUES ('" + album.getIdAlbum() + "', '" + album.getTitle() + "', '" + album.getSinger() + "', '" + album.getPrice() + "', '" + album.getDate() + "')");
+	   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "Información", JOptionPane.INFORMATION_MESSAGE);
 	   estatuto.close();
 	   conex.desconectar();
 	    

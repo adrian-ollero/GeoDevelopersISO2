@@ -7,12 +7,106 @@ import javax.swing.JTextPane;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
+/**
+ * @author Pablo
+ *
+ */
 public class AppInterface_it7 {
 
+	/**
+	 * 
+	 */
 	private JFrame frame;
+	/**
+	 * 
+	 */
+	static final int X_FRAME = 100;
+	/**
+	 * 
+	 */
+	static final int Y_FRAME = 100;
+	/**
+	 * 
+	 */
+	static final int WIDTH_FRAME = 450;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_FRAME = 300;
+	/**
+	 * 
+	 */
+	static final int X_TXT = 20;
+	/**
+	 * 
+	 */
+	static final int Y_TXT = 41;
+	/**
+	 * 
+	 */
+	static final int WIDTH_TXT = 146;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_TXT = 209;
+	/**
+	 * 
+	 */
+	static final int X_LBL = 20;
+	/**
+	 * 
+	 */
+	static final int Y_LBL = 16;
+	/**
+	 * 
+	 */
+	static final int WIDTH_LBL = 46;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_LBL = 14;
+	/**
+	 * 
+	 */
+	static final int Y_ADDSONG = 41;
+	/**
+	 * 
+	 */
+	static final int Y_ADDALBUM = 75;
+	/**
+	 * 
+	 */
+	static final int Y_DELETESONG = 143;
+	/**
+	 * 
+	 */
+	static final int Y_PURCHASE = 109;
+	/**
+	 * 
+	 */
+	static final int Y_SEARCHSONG = 177;
+	/**
+	 * 
+	 */
+	static final int Y_SEARCHALBUM = 211;
+	/**
+	 * 
+	 */
+	static final int X_BTN = 176;
+	/**
+	 * 
+	 */
+	static final int HEIGHT_BTN = 23;
+	/**
+	 * 
+	 */
+	static final int WIDTH_BTN = 103;
 
 	/**
 	 * Launch the application.
+	 */
+	/**
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -30,6 +124,9 @@ public class AppInterface_it7 {
 	/**
 	 * Create the application.
 	 */
+	/**
+	 * 
+	 */
 	public AppInterface_it7() {
 		initialize();
 	}
@@ -37,44 +134,47 @@ public class AppInterface_it7 {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	/**
+	 * 
+	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(X_FRAME, Y_FRAME, WIDTH_FRAME, HEIGHT_FRAME);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JTextPane txtpnTheSpectreTu = new JTextPane();
 		txtpnTheSpectreTu.setText("The Spectre\r\nTu Foto\r\nFaded\r\nAyer\r\nBlanco y Negro");
-		txtpnTheSpectreTu.setBounds(20, 41, 146, 209);
+		txtpnTheSpectreTu.setBounds(X_TXT, Y_TXT, WIDTH_TXT, HEIGHT_TXT);
 		frame.getContentPane().add(txtpnTheSpectreTu);
 		
 		JLabel lblSongs = new JLabel("Songs:");
-		lblSongs.setBounds(20, 16, 46, 14);
+		lblSongs.setBounds(X_LBL, Y_LBL, WIDTH_LBL, HEIGHT_LBL);
 		frame.getContentPane().add(lblSongs);
 		
 		JButton btnAddAlbum = new JButton("Add Album");
-		btnAddAlbum.setBounds(176, 41, 103, 23);
+		btnAddAlbum.setBounds(X_BTN, Y_ADDSONG, WIDTH_BTN, HEIGHT_BTN);
 		frame.getContentPane().add(btnAddAlbum);
 		
 		JButton btnAddSong = new JButton("Add Song");
-		btnAddSong.setBounds(176, 75, 103, 23);
+		btnAddSong.setBounds(X_BTN, Y_ADDALBUM, WIDTH_BTN, HEIGHT_BTN);
 		frame.getContentPane().add(btnAddSong);
 		
 		JButton btnEli = new JButton("Purchase Song");
-		btnEli.setBounds(176, 109, 103, 23);
+		btnEli.setBounds(X_BTN, Y_PURCHASE, WIDTH_BTN, HEIGHT_BTN);
 		frame.getContentPane().add(btnEli);
 		
 		JButton btnNewButton = new JButton("Eliminate Song");
-		btnNewButton.setBounds(176, 143, 103, 23);
+		btnNewButton.setBounds(X_BTN, Y_DELETESONG, WIDTH_BTN, HEIGHT_BTN);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Search Song");
-		btnNewButton_1.setBounds(176, 177, 103, 23);
-		frame.getContentPane().add(btnNewButton_1);
+		JButton btnNewButton1 = new JButton("Search Song");
+		btnNewButton1.setBounds(X_BTN, Y_SEARCHSONG, WIDTH_BTN, HEIGHT_BTN);
+		frame.getContentPane().add(btnNewButton1);
 		
-		JButton btnNewButton_2 = new JButton("Search Album");
-		btnNewButton_2.setBounds(176, 211, 103, 23);
-		frame.getContentPane().add(btnNewButton_2);
+		JButton btnNewButton2 = new JButton("Search Album");
+		btnNewButton2.setBounds(X_BTN, Y_SEARCHALBUM, WIDTH_BTN, HEIGHT_BTN);
+		frame.getContentPane().add(btnNewButton2);
 	}
 
 }

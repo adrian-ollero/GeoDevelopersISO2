@@ -5,16 +5,24 @@ import java.sql.Statement;
 
 import javax.swing.JOptionPane;
 
+import Domain.Album_it3;
 import Persistence.DBBroker;
 
+/**
+ * @author Pablo
+ *
+ */
 public class DaoAlbum_it5 {
 	//modify in the testing phase
+	/**
+	 * @param album
+	 */
 	public void deleteAlbum(Album_it3 album) {
-		DBBroker conex= new DBBroker();
+		DBBroker conex = new DBBroker();
 		  try {
 		   Statement estatuto = conex.getConnection();
-		   estatuto.executeUpdate("DELETE FROM album WHERE idAlbum= "+album.getIdAlbum());
-		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
+		   estatuto.executeUpdate("DELETE FROM album WHERE idAlbum= " + album.getIdAlbum());
+		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "Información", JOptionPane.INFORMATION_MESSAGE);
 		   estatuto.close();
 		   conex.desconectar();
 		    

@@ -3,72 +3,123 @@ package Persistence;
 import java.sql.*;
 import java.util.*;
 
+/**
+ * @author Pablo
+ *
+ */
 public class DBBroker_it2 {
-    protected static DBBroker_it2 mInstancia=null;
+
+    /**
+     * 
+     */
+    protected static DBBroker_it2 mInstancia = null;
+    /**
+     * 
+     */
     protected static Connection mBD;
-    private static String url=""; 
-    private static String driver="com.mysql.jdbc.Driver";
-    
+    /**
+     * 
+     */
+    private static String url = ""; 
+    /**
+     * 
+     */
+    private static String driver = "com.mysql.jdbc.Driver";
+
+    /**
+     * @throws Exception
+     */
     private DBBroker_it2()throws Exception {
-    	conectar();
-    		
+    	conectar();	
     }
     
-    public static DBBroker_it2 getAgente() throws Exception{
-          if (mInstancia==null){
-          mInstancia=new DBBroker_it2();
+    /**
+     * @return
+     * @throws Exception
+     */
+    public static DBBroker_it2 getAgente() throws Exception {
+          if (mInstancia == null) {
+          mInstancia = new DBBroker_it2();
         }
         return mInstancia;
      }
- 
+
+    /**
+     * @throws Exception
+     */
     private void conectar() throws Exception {
          Class.forName(driver);
-         mBD=DriverManager.getConnection(url);
+         mBD = DriverManager.getConnection(url);
     }
 
-    
-    public void desconectar() throws Exception{
+    /**
+     * @throws Exception
+     */
+    public void desconectar() throws Exception {
     	mBD.close();
     }
 
-    public int insert(String SQL) throws SQLException, Exception{ 
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int insert(String sql) throws SQLException, Exception { 
      	conectar();
-    	PreparedStatement stmt = mBD.prepareStatement(SQL);
-    	int res=stmt.executeUpdate();
+    	PreparedStatement stmt = mBD.prepareStatement(sql);
+    	int res = stmt.executeUpdate();
     	stmt.close();
     	desconectar();
     	return res;
     }
     
-    public int delete(String SQL) throws SQLException,Exception{
-    	PreparedStatement stmt = mBD.prepareStatement(SQL);
-    	int res=stmt.executeUpdate();
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int delete(String sql) throws SQLException, Exception {
+    	PreparedStatement stmt = mBD.prepareStatement(sql);
+    	int res = stmt.executeUpdate();
     	stmt.close();
     	desconectar();
     	return res;
     }
     
-    public int update(String SQL) throws SQLException,Exception{
+    /**
+     * @param sql
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public int update(String sql) throws SQLException, Exception {
+    	conectar();
+    	PreparedStatement stmt = mBD.prepareStatement(sql);
+    	int res = stmt.executeUpdate();
+    	stmt.close();
+    	desconectar();
+    	return res;
+    }
+    
+    /**
+     * @param SQL
+     * @return
+     * @throws SQLException
+     * @throws Exception
+     */
+    public Vector<Object> select(String SQL) throws SQLException, Exception {
+
     	conectar();
     	PreparedStatement stmt = mBD.prepareStatement(SQL);
-    	int res=stmt.executeUpdate();
-    	stmt.close();
-    	desconectar();
-    	return res;
-    }
-    
-    
-    public Vector<Object> select(String SQL) throws SQLException,Exception{
+    	ResultSet res = stmt.executeQuery();
 
-    	conectar();
-    	PreparedStatement stmt=mBD.prepareStatement(SQL);
-    	ResultSet res=stmt.executeQuery();
+    	Vector<Object> lista = new Vector<Object>();
 
-    	Vector <Object> lista = new Vector <Object>();
+    	while (res.next()) {
 
-    	while(res.next()){
-
-    		Vector<Object> usuario=new Vector <Object>();
+    		Vector<Object> usuario = new Vector<Object>();
     		usuario.add(res.getString("Author"));				//columnastabla
     		usuario.add(res.getString("Name"));					
     		lista.add(usuario);

@@ -5,15 +5,23 @@ import java.sql.Statement;
 
 import javax.swing.JOptionPane;
 
+import Domain.User;
 import Persistence.DBBroker;
 
+/**
+ * @author Pablo
+ *
+ */
 public class DaoUser_it6 {
+	/**
+	 * @param user
+	 */
 	public void deleteUser(User user) {
-		DBBroker conex= new DBBroker();
+		DBBroker conex = new DBBroker();
 		  try {
 		   Statement estatuto = conex.getConnection();
-		   estatuto.executeUpdate("DELETE FROM user WHERE user= "+user.getUser());
-		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
+		   estatuto.executeUpdate("DELETE FROM user WHERE user= " + user.getUser());
+		   JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "Información", JOptionPane.INFORMATION_MESSAGE);
 		   estatuto.close();
 		   conex.desconectar();
 		    
